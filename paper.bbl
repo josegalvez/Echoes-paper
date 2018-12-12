@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{2}%
+\begin{thebibliography}{16}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -74,4 +74,165 @@
   {2016}{\natexlab{b}})},\ \Eprint {http://arxiv.org/abs/1606.04855}
   {arXiv:1606.04855 [gr-qc]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1606.04855;%%
+\bibitem [{\citenamefont {Frolov}\ \emph {et~al.}(2017)\citenamefont {Frolov},
+  \citenamefont {G\'alvez~Ghersi},\ and\ \citenamefont
+  {Zucca}}]{Frolov:2017asg}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~V.}\ \bibnamefont
+  {Frolov}}, \bibinfo {author} {\bibfnamefont {J.~T.}\ \bibnamefont
+  {G\'alvez~Ghersi}}, \ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Zucca}},\ }\href {\doibase 10.1103/PhysRevD.95.104041} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D95}},\
+  \bibinfo {pages} {104041} (\bibinfo {year} {2017})},\ \Eprint
+  {http://arxiv.org/abs/1704.04114} {arXiv:1704.04114 [gr-qc]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1704.04114;%%
+\bibitem [{\citenamefont {Cardoso}\ \emph
+  {et~al.}(2016{\natexlab{a}})\citenamefont {Cardoso}, \citenamefont
+  {Franzin},\ and\ \citenamefont {Pani}}]{Cardoso:2016rao}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Cardoso}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Franzin}}, \
+  and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Pani}},\ }\href
+  {\doibase 10.1103/PhysRevLett.117.089902, 10.1103/PhysRevLett.116.171101}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {116}},\ \bibinfo {pages} {171101} (\bibinfo {year}
+  {2016}{\natexlab{a}})},\ \bibinfo {note} {[Erratum: Phys. Rev.
+  Lett.117,no.8,089902(2016)]},\ \Eprint {http://arxiv.org/abs/1602.07309}
+  {arXiv:1602.07309 [gr-qc]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1602.07309;%%
+\bibitem [{\citenamefont {Krauss}\ \emph {et~al.}(2010)\citenamefont {Krauss},
+  \citenamefont {Dodelson},\ and\ \citenamefont {Meyer}}]{Krauss989}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~M.}\ \bibnamefont
+  {Krauss}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Dodelson}}, \
+  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Meyer}},\ }\href
+  {\doibase 10.1126/science.1179541} {\bibfield  {journal} {\bibinfo  {journal}
+  {Science}\ }\textbf {\bibinfo {volume} {328}},\ \bibinfo {pages} {989}
+  (\bibinfo {year} {2010})},\ \Eprint
+  {http://arxiv.org/abs/http://science.sciencemag.org/content/328/5981/989
+  .full.pdf} {http://science.sciencemag.org/content/328/5981/989 .full.pdf}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ade}\ \emph {et~al.}(2018)\citenamefont {Ade} \emph
+  {et~al.}}]{Ade:2018gkx}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~A.~R.}\
+  \bibnamefont {Ade}} \emph {et~al.} (\bibinfo {collaboration} {BICEP2, Keck
+  Array}),\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Submitted to: Phys. Rev. Lett.}\ } (\bibinfo {year} {2018})},\ \Eprint
+  {http://arxiv.org/abs/1810.05216} {arXiv:1810.05216 [astro-ph.CO]}
+  \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1810.05216;%%
+\bibitem [{\citenamefont {Clifton}\ \emph {et~al.}(2012)\citenamefont
+  {Clifton}, \citenamefont {Ferreira}, \citenamefont {Padilla},\ and\
+  \citenamefont {Skordis}}]{Clifton:2011jh}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Clifton}}, \bibinfo {author} {\bibfnamefont {P.~G.}\ \bibnamefont
+  {Ferreira}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Padilla}}, \
+  and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Skordis}},\ }\href
+  {\doibase 10.1016/j.physrep.2012.01.001} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rept.}\ }\textbf {\bibinfo {volume} {513}},\ \bibinfo
+  {pages} {1} (\bibinfo {year} {2012})},\ \Eprint
+  {http://arxiv.org/abs/1106.2476} {arXiv:1106.2476 [astro-ph.CO]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1106.2476;%%
+\bibitem [{\citenamefont {Taliotis}(2013)}]{Taliotis:2012sx}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Taliotis}},\ }\href {\doibase 10.1007/JHEP05(2013)034} {\bibfield  {journal}
+  {\bibinfo  {journal} {JHEP}\ }\textbf {\bibinfo {volume} {05}},\ \bibinfo
+  {pages} {034} (\bibinfo {year} {2013})},\ \Eprint
+  {http://arxiv.org/abs/1212.0528} {arXiv:1212.0528 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1212.0528;%%
+\bibitem [{\citenamefont {Joyce}\ \emph {et~al.}(2015)\citenamefont {Joyce},
+  \citenamefont {Jain}, \citenamefont {Khoury},\ and\ \citenamefont
+  {Trodden}}]{Joyce:2014kja}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Joyce}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Jain}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Khoury}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Trodden}},\ }\href {\doibase
+  10.1016/j.physrep.2014.12.002} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Rept.}\ }\textbf {\bibinfo {volume} {568}},\ \bibinfo {pages} {1}
+  (\bibinfo {year} {2015})},\ \Eprint {http://arxiv.org/abs/1407.0059}
+  {arXiv:1407.0059 [astro-ph.CO]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1407.0059;%%
+\bibitem [{\citenamefont {Morris}\ \emph {et~al.}(1988)\citenamefont {Morris},
+  \citenamefont {Thorne},\ and\ \citenamefont
+  {Yurtsever}}]{PhysRevLett.61.1446}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~S.}\ \bibnamefont
+  {Morris}}, \bibinfo {author} {\bibfnamefont {K.~S.}\ \bibnamefont {Thorne}},
+  \ and\ \bibinfo {author} {\bibfnamefont {U.}~\bibnamefont {Yurtsever}},\
+  }\href {\doibase 10.1103/PhysRevLett.61.1446} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {61}},\ \bibinfo
+  {pages} {1446} (\bibinfo {year} {1988})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Almheiri}\ \emph {et~al.}(2013)\citenamefont
+  {Almheiri}, \citenamefont {Marolf}, \citenamefont {Polchinski},\ and\
+  \citenamefont {Sully}}]{Almheiri:2012rt}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Almheiri}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Marolf}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Polchinski}}, \ and\
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Sully}},\ }\href
+  {\doibase 10.1007/JHEP02(2013)062} {\bibfield  {journal} {\bibinfo  {journal}
+  {JHEP}\ }\textbf {\bibinfo {volume} {02}},\ \bibinfo {pages} {062} (\bibinfo
+  {year} {2013})},\ \Eprint {http://arxiv.org/abs/1207.3123} {arXiv:1207.3123
+  [hep-th]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1207.3123;%%
+\bibitem [{\citenamefont {Mazur}\ and\ \citenamefont
+  {Mottola}(2001)}]{Mazur:2001fv}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~O.}\ \bibnamefont
+  {Mazur}}\ and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Mottola}},\ }\href@noop {} {\  (\bibinfo {year} {2001})},\ \Eprint
+  {http://arxiv.org/abs/gr-qc/0109035} {arXiv:gr-qc/0109035 [gr-qc]}
+  \BibitemShut {NoStop}%
+%%CITATION = GR-QC/0109035;%%
+\bibitem [{\citenamefont {Cardoso}\ \emph
+  {et~al.}(2016{\natexlab{b}})\citenamefont {Cardoso}, \citenamefont {Hopper},
+  \citenamefont {Macedo}, \citenamefont {Palenzuela},\ and\ \citenamefont
+  {Pani}}]{Cardoso:2016oxy}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Cardoso}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Hopper}},
+  \bibinfo {author} {\bibfnamefont {C.~F.~B.}\ \bibnamefont {Macedo}}, \bibinfo
+  {author} {\bibfnamefont {C.}~\bibnamefont {Palenzuela}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {P.}~\bibnamefont {Pani}},\ }\href {\doibase
+  10.1103/PhysRevD.94.084031} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev.}\ }\textbf {\bibinfo {volume} {D94}},\ \bibinfo {pages} {084031}
+  (\bibinfo {year} {2016}{\natexlab{b}})},\ \Eprint
+  {http://arxiv.org/abs/1608.08637} {arXiv:1608.08637 [gr-qc]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1608.08637;%%
+\bibitem [{\citenamefont {Abedi}\ \emph {et~al.}(2017)\citenamefont {Abedi},
+  \citenamefont {Dykaar},\ and\ \citenamefont {Afshordi}}]{Abedi:2016hgu}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Abedi}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Dykaar}}, \
+  and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Afshordi}},\ }\href
+  {\doibase 10.1103/PhysRevD.96.082004} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D96}},\ \bibinfo {pages}
+  {082004} (\bibinfo {year} {2017})},\ \Eprint
+  {http://arxiv.org/abs/1612.00266} {arXiv:1612.00266 [gr-qc]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1612.00266;%%
+\bibitem [{\citenamefont {Abedi}\ and\ \citenamefont
+  {Afshordi}(2018)}]{Abedi:2018npz}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Abedi}}\ and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Afshordi}},\ }\href@noop {} {\  (\bibinfo {year} {2018})},\ \Eprint
+  {http://arxiv.org/abs/1803.10454} {arXiv:1803.10454 [gr-qc]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1803.10454;%%
+\bibitem [{\citenamefont {Daubechies}(1992)}]{Daubechies:1992:TLW:130655}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Daubechies}},\ }\href@noop {} {\emph {\bibinfo {title} {Ten Lectures on
+  Wavelets}}}\ (\bibinfo  {publisher} {Society for Industrial and Applied
+  Mathematics},\ \bibinfo {address} {Philadelphia, PA, USA},\ \bibinfo {year}
+  {1992})\BibitemShut {NoStop}%
 \end{thebibliography}%
