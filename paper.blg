@@ -25,45 +25,45 @@ Control: year (1) truncated
 Control: production of eprint (0) enabled
 Warning--missing journal in Mazur:2001fv
 Warning--missing journal in Abedi:2018npz
-You've used 20 entries,
+You've used 24 entries,
             5847 wiz_defined-function locations,
-            1780 strings with 18950 characters,
-and the built_in function-call counts, 18540 in all, are:
-= -- 1194
-> -- 429
-< -- 138
-+ -- 141
-- -- 115
-* -- 2956
-:= -- 1807
-add.period$ -- 18
-call.type$ -- 20
-change.case$ -- 73
-chr.to.int$ -- 26
-cite$ -- 22
-duplicate$ -- 1788
-empty$ -- 1336
-format.name$ -- 253
-if$ -- 3582
-int.to.chr$ -- 3
-int.to.str$ -- 27
-missing$ -- 233
-newline$ -- 121
-num.names$ -- 54
-pop$ -- 734
+            1811 strings with 19807 characters,
+and the built_in function-call counts, 21713 in all, are:
+= -- 1436
+> -- 478
+< -- 159
++ -- 160
+- -- 125
+* -- 3387
+:= -- 2153
+add.period$ -- 22
+call.type$ -- 24
+change.case$ -- 89
+chr.to.int$ -- 29
+cite$ -- 26
+duplicate$ -- 2087
+empty$ -- 1583
+format.name$ -- 281
+if$ -- 4214
+int.to.chr$ -- 4
+int.to.str$ -- 31
+missing$ -- 274
+newline$ -- 134
+num.names$ -- 66
+pop$ -- 866
 preamble$ -- 1
-purify$ -- 90
+purify$ -- 110
 quote$ -- 0
-skip$ -- 644
+skip$ -- 771
 stack$ -- 0
-substring$ -- 447
-swap$ -- 1690
-text.length$ -- 45
+substring$ -- 551
+swap$ -- 1955
+text.length$ -- 50
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 258
+type$ -- 307
 warning$ -- 3
-while$ -- 60
+while$ -- 72
 width$ -- 0
-write$ -- 222
+write$ -- 255
 (There were 3 warnings)
