@@ -13,6 +13,10 @@ Database file #1: paperNotes.bib
 Database file #2: bibliography.bib.bib
 Warning--string name "https://aip.scitation.org/doi/pdf/10.1063/1.522949" is undefined
 --line 359 of file bibliography.bib.bib
+I was expecting a `,' or a `}'---line 404 of file bibliography.bib.bib
+ :       url = {https://bit.ly/2GgfDBH}
+ :                                     "
+I'm skipping whatever remains of this entry
 control{REVTEX41Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
 control{apsrev41Control}, control.key{N/A}, control.author{08}, control.editor{1}, control.title{}, control.pages{0}, control.year{1}, control.eprint{N/A}, 
 Warning--jnrlst (dependency: not reversed) set 1
@@ -27,45 +31,46 @@ Control: year (1) truncated
 Control: production of eprint (0) enabled
 Warning--missing journal in Mazur:2001fv
 Warning--missing journal in Abedi:2018npz
-You've used 28 entries,
+Warning--missing publisher in Frolov:1998wf
+You've used 30 entries,
             5847 wiz_defined-function locations,
-            1842 strings with 20479 characters,
-and the built_in function-call counts, 24730 in all, are:
-= -- 1670
-> -- 518
-< -- 179
-+ -- 177
-- -- 133
-* -- 3785
-:= -- 2491
-add.period$ -- 26
-call.type$ -- 28
-change.case$ -- 105
-chr.to.int$ -- 32
-cite$ -- 30
-duplicate$ -- 2375
-empty$ -- 1821
-format.name$ -- 301
-if$ -- 4812
+            1861 strings with 20915 characters,
+and the built_in function-call counts, 26520 in all, are:
+= -- 1788
+> -- 563
+< -- 190
++ -- 191
+- -- 143
+* -- 4057
+:= -- 2671
+add.period$ -- 28
+call.type$ -- 30
+change.case$ -- 115
+chr.to.int$ -- 34
+cite$ -- 33
+duplicate$ -- 2547
+empty$ -- 1961
+format.name$ -- 329
+if$ -- 5166
 int.to.chr$ -- 5
-int.to.str$ -- 35
-missing$ -- 314
-newline$ -- 149
-num.names$ -- 78
-pop$ -- 992
+int.to.str$ -- 37
+missing$ -- 335
+newline$ -- 156
+num.names$ -- 85
+pop$ -- 1066
 preamble$ -- 1
-purify$ -- 130
+purify$ -- 140
 quote$ -- 0
-skip$ -- 893
+skip$ -- 954
 stack$ -- 0
-substring$ -- 649
-swap$ -- 2205
-text.length$ -- 54
+substring$ -- 685
+swap$ -- 2359
+text.length$ -- 60
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 355
-warning$ -- 3
-while$ -- 84
+type$ -- 381
+warning$ -- 4
+while$ -- 89
 width$ -- 0
-write$ -- 290
-(There were 4 warnings)
+write$ -- 307
+(There was 1 error message)
