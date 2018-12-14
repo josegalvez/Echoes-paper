@@ -65,12 +65,60 @@ The era of gravitational wave (GW) astronomy \citep{Abbott:2016blz, Abbott:2016n
 
 The prolonged absence of observational evidence confirming the dynamical properties of spacetime has motivated a plethora of conjectures about the behaviour of gravity within and beyond \citep{Clifton:2011jh, Taliotis:2012sx, Joyce:2014kja} classical General Relativity (GR). Latterly, the potential existence of exotic compact objects (ECOs) sourced by quantum effects on gravity \citep{PhysRevLett.61.1446, Almheiri:2012rt, Mazur:2001fv} (such as wormholes, firewalls and gravastars) has captured the attention of many recent efforts \citep{Cardoso:2016oxy, Abedi:2016hgu, Abedi:2018npz}. Wherein the primary claim is that the detection of a train of ``echoes'' isolated from the main transient of GW and with generically large amplitudes would be clear evidence of ECOs. It is, therefore, necessary to understand (i) the mechanisms behind the production of echoes and (ii) the intensity and spectrum of the outgoing wavelets compared to the GW transient in the most straightforward possible setup. In this paper, we explore the generation of echoes by colliding wavepackets of scalar and tensor radiation against a traversable spherically symmetric wormhole \citep{Visser:1989kh}. Such a wormhole behaves just like a Fabry-Perot cavity, shares common properties with the effective potential cavities made by other ECOs, like gravastars and firewalls, and the main features of the dispersed pulses are similar to the ringdown signals after the coalescence of ECOs.
 
-Here we consider a wormhole configuration made by the junction of two Schwarzschild geometries of equal masses at $r_0>2M$, just as shown in \citep{Cardoso:2016oxy}. In this case, the symmetry of the centrifugal barriers at $r=3M$ on each side of the throat allows us to find the reflection and transmission coefficients of the cavity. Hence, it is possible to reconstruct the spectral shape of the outgoing pulse using the geometrical optics approximation. Nevertheless, this approximation predicts an exponential decay of the subsequent higher order reflections, which appears instead as a power law in the full solution of the scattering problem. Thus, the excitation of quasinormal modes (QNMs) is the only cause for the presence of echoes in the time evolving profile, these modes are sourced by a sequence of internal reflections inside the potential cavity and then propagate throughout the surface of the maximal potential energy spheres (i.e., the ``edges'' of the potential barriers), while leaking energy into the exterior. QNMs of the Schwarzschild solution have been extensively studied and reproduced in various analytic and numerical simulations \citep{Chandrasekhar:1975zza, PhysRevD.46.4179}; thus it is easy to identify their characteristic frequencies in the spectrum of outgoing pulses. We as well present the full scattering solution both inside and outside the wormhole cavity in detail, along with the energy fluxes and the asymptotic solutions for the principal spherical modes of a scalar (and tensor) wavepackets. In addition to this, we find the width and frequency intervals contained in the incident wavepackets for which the outgoing the wavelets have maximal amplitudes.
+Here we consider a wormhole configuration made by the junction of two Schwarzschild geometries of equal masses at $r_0>2M$, just as shown in \citep{Cardoso:2016oxy}. In this case, the symmetry of the centrifugal barriers at $r=3M$ on each side of the throat allows us to find the reflection and transmission coefficients of the cavity. Hence, it is possible to reconstruct the spectral shape of the outgoing pulse using the geometrical optics approximation. Nevertheless, this approximation predicts an exponential decay of the subsequent higher order reflections, which appears instead as a power law in the full solution of the scattering problem. Thus, the excitation of quasinormal modes (QNMs) is the only cause for the presence of echoes in the time evolving profile, these modes are sourced by a sequence of internal reflections inside the potential cavity and then propagate throughout the surface of the maximal potential energy spheres (i.e., the ``edges'' of the potential barriers), while leaking energy into the exterior. QNMs of the Schwarzschild solution have been extensively studied and reproduced in various analytic and numerical simulations \citep{Chandrasekhar:1975zza, PhysRevD.46.4179}; thus it is easy to identify their characteristic frequencies in the spectrum of outgoing pulses. We as well present the full scattering solution both inside and outside the wormhole cavity in detail, along with the energy fluxes and the asymptotic solutions for the principal spherical modes of a scalar (and tensor) wavepackets. In addition to this, we find the width and frequency intervals contained in the incident wavepackets for which the outgoing the wavelets have maximal amplitudes. Our computer code is optimized to solve both scalar accretion and scattering problems and is publicly available in \url{https://github.com/andrei-v-frolov/accretion/tree/wormhole}.
 
 The layout for this paper is as follows: in section \ref{sec:scalar}, we review the scattering problem of scalar waves starting by a quick overview of the dispersion of a Gaussian pulse by a Schwarzschild black hole. In this review, we will be able to calculate the transmission and reflection coefficients of the centrifugal barriers constituting the walls of the resonant cavity in the case of the wormhole. Our results show a frequency ``sweet spot'' such that the incident pulse is not fully reflected nor fully transmitted by the cavity, favouring multiple internal reflections that source the QNMs.  Furthermore, we solve the scattering problem by a wormhole directly using the same ingoing Gaussian wavepacket, and then we compare the Fourier transform of this solution with the pulse reconstructed following the geometrical optics approximation. We find that the approximate reconstruction matches the full solution, up to the peaks due to the QNM frequencies. Likewise, we evaluate the amplitude of each of the echoes as a function of the width of the initial gaussian waveform, finding that a single width of the incident pulse maximizes the amplitude of each echo. In section \ref{sec:tensor}, we extend all the results in the previous section for a Gaussian pulse of tensor fluctuations of the metric by following the even and odd decomposition of the tensor modes introduced by Regge, Wheeler and Zerilli in \citep{Regge:1957td, PhysRevD.2.2141, PhysRevD.5.2419, PhysRevD.5.2439}. Our results can be recasted in terms of the usual asymptotic polarization modes $h_+$ and $h_{\times}$, known as the perturbations of a flat metric. Finally, in section \ref{sec:conclusions}, we discuss and conclude.
 
 \section{Scattering of scalar wavepackets}\label{sec:scalar}
-\section{Scattering of tensor wavepackets}\label{sec:tensor}
+In this section, we solve the scattering of a Gaussian wavepacket by a spherically symmetric wormhole. To do so, we will first review the dispersion by the centrifugal barrier of a spherically symmetric black hole in order to find the properties of the potential cavity.
+\subsection{Scattering by a Schwarzschild black hole}
+The dispersion of scalar waves by a Schwarzschild black hole has been thoroughly studied \citep{doi:10.1063/1.522949, Sanchez:1976xm, Sanchez:1977si, Sanchez:1977vz}, it is crucial for our purposes to provide the full solution since it contains all the information of the potential barriers constituting the effective potential in the case of a wormhole. The dynamics of the scattering problem is found by solving the equation of motion for scalar field
+\begin{equation}
+\Box\Phi=0,\label{eq:scalar_eq_mov} 
+\end{equation}
+where $\Box\equiv g^{\alpha\beta}\nabla_{\alpha}\nabla_{\beta}$ is the standard d'Alembertian in a curved background. Here $g_{\alpha\beta}$ is the metric tensor in a spherically symmetric Schwarzschild-like static spacetime
+\begin{equation}
+g_{\alpha\beta}=-f(r)\delta^t_{\alpha}\delta^t_{\beta}+\frac{1}{f(r)}\delta^r_{\alpha}\delta^r_{\beta}+r^2\left(\delta^{\theta}_{\alpha}\delta^{\theta}_{\beta}+\sin^2\theta\delta^{\phi}_{\alpha}\delta^{\phi}_{\beta}\right).
+\label{eq:Schwarzschild}
+\end{equation}
+\begin{figure}[t]
+\centering
+\includegraphics[width=.45\textwidth]{figures/potential_scalar_bh.pdf}
+\caption{\label{fig:Potential_BH} Effective potential for the spherical modes $\mathcal{U}_{\ell m}(x,t)$ scattered by a Schwarzschild black hole, growing with $\ell$. The wall acts as a barrier transparent to certain frequencies above a transmissivity threshold and reflective for lower frequencies.}
+\end{figure}
+It is convenient to introduce the tortoise coordinate $x$:
+\begin{equation}
+x\equiv\displaystyle{\int_{r_0}^r\frac{dr}{f(r)}},
+\label{eq:tortoise}
+\end{equation} 
+for $r_0>2M$. In the case of the Schwarzschild metric $f(r)=1-2M/r$ the last expression yields
+\begin{equation}
+x=r-r_0+2M\ln\left(\frac{r-2M}{r_0-2M}\right),
+\label{eq:tortoise2}
+\end{equation} 
+for $2M<r<+\infty$. We can notice that $r=r_0$ corresponds to $x=0$, the horizon $r=2M$ maps into $x\rightarrow-\infty$ and $r\rightarrow+\infty$ is $x\rightarrow+\infty$. In our numerical routine, we invert \eqref{eq:tortoise2} to get $r\equiv r(x)$ (see the appendix A, subsection 6 in \citep{Frolov:2017asg} for more details). In tortoise coordinates, we can decompose the scalar field in spherical harmonics 
+\begin{equation}
+\Phi(x,t)=\frac{1}{r(x)}\sum_{\ell,m=0}\mathcal{U}_{\ell m}(x,t)Y_{\ell m}(\theta,\phi),
+\label{eq:ylm_decomp}
+\end{equation}
+in that way we can rewrite \eqref{eq:scalar_eq_mov} as
+\begin{equation}
+\left[-\partial_t^2+\partial_x^2-V_{\mathrm{scalar}}(x)\right]\mathcal{U}_{\ell m}(x,t) = 0,
+\label{eq:wave_scalar}
+\end{equation}
+and the effective potential $V_{\mathrm{scalar}}(x)$ is given by
+\begin{equation}
+V_{\mathrm{scalar}}(x) = \left(1-\frac{2M}{r(x)}\right)\left[\frac{\ell(\ell+1)}{r(x)^2}+\frac{2M}{r(x)^3}\right].
+\end{equation}
+After rearranging the variables, the equation of motion of the spherical modes is now written in its traditional linear waveform. In Fig.~\ref{fig:Potential_BH}, we observe the growth of the potential barrier with the quantum number $\ell$. The potential wall does not vanish at $\ell=0$ due to the extra term proportional to $r^{-3}$ appearing after the coordinate change, which replaces the radial damping in the original Schwarzschild coordinates $(t,r)$. Such a term becomes subdominant for all $\ell\geq 1$. Intuitively, it is reasonable to expect that the modes with frequency above a given threshold can cross the barrier, while reflecting the lower frequency modes. 
+
+Now we setup the scattering problem for one of the spherical modes $(\mathcal{U}_{20})$ with the following initial conditions
+\begin{equation}
+\mathcal{U}_{20}(x,0)=\exp\left(\frac{(x-x_0)^2}{2\sigma^2}\right)~,~\frac{d \mathcal{U}_{20}}{dt}\bigg{|}_{t=0}=\frac{d \mathcal{U}_{20}(x,0)}{dx},
+\label{eq:scalar_init_cond}
+\end{equation}
+which corresponds to an ingoing Gaussian wavepacket containing an infinite number of frequencies.
+\section{Scattering of tensor wavepackets}\label{sec:tensor} 
 \section{Conclusions}\label{sec:conclusions}
 
 \bibliography{bibliography.bib}

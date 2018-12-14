@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 DEC 2018 08:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 DEC 2018 20:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -528,8 +528,15 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 60.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./
-paper.bbl
+) [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<figures/potential_scalar_bh.pdf, id=101, 472.33755pt x 345.88834pt>
+File: figures/potential_scalar_bh.pdf Graphic file (type pdf)
+
+<use figures/potential_scalar_bh.pdf>
+Package pdftex.def Info: figures/potential_scalar_bh.pdf used on input line 86.
+
+(pdftex.def)             Requested size: 229.49844pt x 168.06175pt.
+ (./paper.bbl [2 <./figures/potential_scalar_bh.pdf>]
 Underfull \hbox (badness 2980) in paragraph at lines 96--105
  \OT1/cmr/m/n/9 Lett. \OT1/cmr/bx/n/9 116\OT1/cmr/m/n/9 , 171101 (2016)[][], [E
 r-ra-tum: Phys. Rev.
@@ -556,37 +563,49 @@ Underfull \hbox (badness 2452) in paragraph at lines 190--197
  []\OT1/cmr/m/n/9 P. O. Mazur and E. Mot-tola,  (2001), [][]arXiv:gr-
  []
 
-) [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
+) [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
  (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: E96EAF309418F319A98AFBE10BF93DDF;471.
+(rerunfilecheck)             Checksum: 82584A2140882D5AEA16403EE1A70BF5;557.
  ) 
 Here is how much of TeX's memory you used:
- 9091 strings out of 493014
- 127916 string characters out of 6133351
- 259929 words of memory out of 5000000
- 12460 multiletter control sequences out of 15000+600000
- 16461 words of font info for 61 fonts, out of 8000000 for 9000
+ 9146 strings out of 493014
+ 128922 string characters out of 6133351
+ 262496 words of memory out of 5000000
+ 12497 multiletter control sequences out of 15000+600000
+ 16629 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,8n,35p,1741b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,35p,1918b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on paper.pdf (2 pages, 146410 bytes).
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dist/font
+s/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on paper.pdf (3 pages, 354045 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 301 PDF objects out of 1000 (max. 8388607)
+ 268 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 70 words of extra memory for PDF output out of 10000 (max. 10000000)
 

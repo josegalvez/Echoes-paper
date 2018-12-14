@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{22}%
+\begin{thebibliography}{26}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -285,4 +285,34 @@
   {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {5}},\
   \bibinfo {pages} {2439} (\bibinfo {year} {1972}{\natexlab{b}})}\BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Sanchez}(1976)}]{doi:10.1063/1.522949}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~G.}\ \bibnamefont
+  {Sanchez}},\ }\href {\doibase 10.1063/1.522949} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Mathematical Physics}\ }\textbf {\bibinfo
+  {volume} {17}},\ \bibinfo {pages} {688} (\bibinfo {year} {1976})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Sanchez}(1977)}]{Sanchez:1976xm}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~G.}\ \bibnamefont
+  {Sanchez}},\ }\href {\doibase 10.1103/PhysRevD.16.937} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D16}},\
+  \bibinfo {pages} {937} (\bibinfo {year} {1977})}\BibitemShut {NoStop}%
+%%CITATION = PHRVA,D16,937;%%
+\bibitem [{\citenamefont {Sanchez}(1978{\natexlab{a}})}]{Sanchez:1977si}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~G.}\ \bibnamefont
+  {Sanchez}},\ }\href {\doibase 10.1103/PhysRevD.18.1030} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D18}},\
+  \bibinfo {pages} {1030} (\bibinfo {year} {1978}{\natexlab{a}})}\BibitemShut
+  {NoStop}%
+%%CITATION = PHRVA,D18,1030;%%
+\bibitem [{\citenamefont {Sanchez}(1978{\natexlab{b}})}]{Sanchez:1977vz}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~G.}\ \bibnamefont
+  {Sanchez}},\ }\href {\doibase 10.1103/PhysRevD.18.1798} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D18}},\
+  \bibinfo {pages} {1798} (\bibinfo {year} {1978}{\natexlab{b}})}\BibitemShut
+  {NoStop}%
+%%CITATION = PHRVA,D18,1798;%%
 \end{thebibliography}%
