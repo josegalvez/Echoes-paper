@@ -71,7 +71,7 @@ The layout for this paper is as follows: in section \ref{sec:scalar}, we review 
 
 \section{Scattering of scalar wavepackets}\label{sec:scalar}
 In this section, we solve the scattering of a Gaussian wavepacket by a spherically symmetric wormhole. To do so, we will first review the dispersion by the centrifugal barrier of a spherically symmetric black hole in order to find the properties of the potential cavity.
-\subsection{Scattering by a Schwarzschild black hole}
+\subsection{Scattering by a Schwarzschild black hole}\label{subsec:bh} 
 The dispersion of scalar waves by a Schwarzschild black hole has been thoroughly studied \citep{doi:10.1063/1.522949, Sanchez:1976xm, Sanchez:1977si, Sanchez:1977vz}, it is crucial for our purposes to provide the full solution since it contains all the information of the potential barriers constituting the effective potential in the case of a wormhole. The dynamics of the scattering problem is found by solving the equation of motion for scalar field
 \begin{equation}
 \Box\Phi=0,\label{eq:scalar_eq_mov} 
@@ -145,13 +145,13 @@ R(\omega)\equiv \frac{||\tilde{\mathcal{U}}_{20}^{\mathrm{ref}}(\omega)||}{||\ti
 \end{equation}
 \begin{figure}[t]
 \centering
-\includegraphics[width=.45\textwidth]{figures/potential_scalar.pdf}
+\includegraphics[width=.4\textwidth]{figures/potential_scalar.pdf}
 \caption{\label{fig:potential_wh} Effective potential cavity for the wormhole, we observe the growth of the barriers with the quantum number $\ell$.}
 \end{figure}
 
 as the transmission and reflection coefficients, respectively. In Fig.~\ref{fig:RT_scalar}, we plot the squares of these coefficients as functions of frequency observing that the identity $R^2+T^2=1$ is only approximately met because of the small contributions coming from the QNMs frequency peaks in both the transmitted and reflected solutions. The shape of both the transmissivity and reflectivity curves is very similar to an hyperbolic tangent step function\footnote{This is not surprising after we consider the DeWitt approximation for the transmissivity \citep{Frolov:1998wf}, which is precisely given by a step function.}, intersecting at $R^2=T^2=0.5$, as expected. Furthermore, it is crucial to notice from the last figure that it is only in a narrow band of frequencies where the amplitudes transmitted and reflected by the potential barrier are comparable. in the case of a wormhole, such a fact will be important in our analysis.  
 
-\subsection{Scattering by a traversable wormhole} 
+\subsection{Scattering by a traversable wormhole}\label{subsec:wh} 
 In this section, we study the dispersion of Gaussian wavepackets by a traversable wormhole, formed by the junction at $r_0>r_g$ of two Schwarzschild black hole solutions with equal mass. There is a discontinuity in $G_{\alpha\beta}$ such that at $r=r_0=20.0r_g$, any contracting congruence of geodesics in one side of the throat starts to expand in order to reach the other side, violating the weak energy condition.
 The dynamics of the scattering problem is still given by the solutions of \eqref{eq:scalar_eq_mov} following the same decomposition in spherical modes as in \eqref{eq:ylm_decomp}. Hence, the waveform of the equation of motion for the spherical modes is given by
 \begin{equation}
@@ -177,7 +177,32 @@ It is not difficult to see that, in the hypothetic case of a perfectly reflectiv
 \Phi^{\mathrm{f}}(\omega)|_{x\rightarrow+\infty}=\left[R+T\circ\sum_{i=0}R^i\circ T\right]\circ\Phi_0(\omega),
 \label{eq:reconst_firewall}
 \end{equation}
-corresponding to the case of a firewall. We will not cover the features of the firewall solution in what remains of this paper.
+corresponding to the case of a firewall. We will not cover the features of the firewall solution in what remains of this paper. 
+
+\begin{figure*}
+\centering
+\subfigure{
+\includegraphics[width=.4\textwidth]{figures/wh_l_2.pdf}} \,
+\subfigure{
+\includegraphics[width=.4\textwidth]{figures/wh_flux_l_2.pdf}}
+\caption{\label{fig:sol_n_flux_wh} Left panel: Evolution of the quadrupole mode $\mathcal{U}_{20}$ for the effective potential in Fig.~\ref{fig:potential_wh}. We can notice the sequence of reflections and transmissions inside the cavity is very similar to the scheme depicted in Fig.~\ref{fig:Geom_optics}. Right panel: Evolution of the radial flux $\mathcal{J}_{20}\equiv \mathcal{U}_{20,x} \mathcal{U}_{20,t}$, the only incident source comes from the collision of the pulse, which dissipates very slowly to the exterior every time the internal reflections hit the walls of the potential cavity. QNM are sourced by this process.} 
+\end{figure*}
+
+We now solve the scattering problem exactly for the quadrupole mode $\mathcal{U}_{20}(t,x)$. Using the same initial conditions as in \eqref{eq:scalar_init_cond} for $\sigma=0.9185r_g$ as the width of the incident Gaussian pulse, we find the time-dependent solution of the quadrupole mode $\mathcal{U}_{20}$ (left panel) and its radial flux $\mathcal{J}_{20}\equiv \mathcal{U}_{20,x} \mathcal{U}_{20,t}$ (right panel) in Fig.~\ref{fig:sol_n_flux_wh}. It is interesting to notice in the evolution plot (on the left) that the signal forms an interference pattern at very late times, showing that this process might fill the cavity. In addition to this, even when the amplitude of the modes decreases after each collision against any of the potential walls, the spherical modes propagate for longer time throughout the spheres of maximal potential.
+
+The amplitude of the outgoing signals depends on the width of the incident Gaussian wavepacket, this is visible in Fig.~\ref{fig:asympt_two_sigmas} where we plot the asymptotic solutions for two different ingoing wavepackets: one with $\sigma=0.6495r_g$ in the left panel and a second one with $\sigma=5.196r_g$ in the right. After subtracting the outgoing solution for a black hole, the presence of a train of wavelets, widely known as echoes, is very clear. The signal is not a straight line after the transient, as we can observe in the right panel of this figure. Therefore, subtracting the black hole outgoing pulse (i.e., the case in which there is only one potential wall) turns to be a convenient way to clean the signal from back reflections due to the ``tails'' of the potential barrier, especially since in this case the echoes are four orders of magnitude smaller than the transient.
+
+As shown in subsection \ref{subsec:bh}, the values of reflectivity and transmissivity determine the frequencies going through the walls of the potential cavity: most of the power of an incident pulse with large $\sigma$ is in the low frequency domain, and therefore it will be reflected. Moreover, the cavity is transparent to high frequency signals, which are dominant in the pulses with small $\sigma$. 
+\begin{figure*}
+\centering
+\subfigure{
+\includegraphics[width=.45\textwidth]{figures/Scalar_echo_w_06495.pdf}} \,
+\subfigure{
+\includegraphics[width=.45\textwidth]{figures/Scalar_echo.pdf}}
+\caption{\label{fig:asympt_two_sigmas} Left panel: Asymptotic evolution of the quadrupole mode $\mathcal{U}_{20}$ for $\sigma=0.6495r_g$. Echoes are plotted in the upper corner of the plot, showing them along with their Hilbert envelope (in green) and maximum amplitudes (in red). Right panel: Asymptotic evolution of the quadrupole mode $\mathcal{U}_{20}$ for $\sigma=5.196r_g$. In contrast with the left panel, echoes are four orders of magnitude smaller than the transient.} 
+\end{figure*}
+In either of these extremal scenarios, QNMs cannot be sourced by internal reflections and thus, the amplitude of the echoes is not generically large. Now we proceed to reconstruct the asymptotic spectrum using the reflectivity and transmissivity defined in \eqref{eq:ref_and_trans} and the compare it with the Fourier transformed asymptotic solutions of \eqref{eq:wave_scalar_wh}.
+
 \section{Scattering of tensor wavepackets}\label{sec:tensor} 
 \section{Conclusions}\label{sec:conclusions}
 
