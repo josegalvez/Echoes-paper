@@ -84,7 +84,7 @@ g_{\alpha\beta}=-f(r)\delta^t_{\alpha}\delta^t_{\beta}+\frac{1}{f(r)}\delta^r_{\
 \begin{figure}[t]
 \centering
 \includegraphics[width=.45\textwidth]{figures/potential_scalar_bh.pdf}
-\caption{\label{fig:Potential_BH} Effective potential for the spherical modes $\mathcal{U}_{\ell m}(x,t)$ scattered by a Schwarzschild black hole, growing with $\ell$. The wall acts as a barrier transparent to certain frequencies above a transmissivity threshold and reflective for lower frequencies.}
+\caption{\label{fig:Potential_BH} Effective potential for the spherical modes $\mathcal{U}^{\mathrm{bh}}_{20}(x,t)$ scattered by a Schwarzschild black hole, growing with $\ell$. The wall acts as a barrier transparent to certain frequencies above a transmissivity threshold and reflective for lower frequencies.}
 \end{figure}
 It is convenient to introduce the tortoise coordinate $x$:
 \begin{equation}
@@ -98,12 +98,12 @@ x=r-r_0+r_g\ln\left(\frac{r-r_g}{r_0-r_g}\right),
 \end{equation} 
 for $r_g<r<+\infty$ and $r_0>r_g$, where $r_g=2M$ is the usual Schwarzschild radius. By direct evaluation, we see that $r=r_0$ corresponds to $x=0$, the horizon $r=2M$ maps into $x\rightarrow-\infty$ and $r\rightarrow+\infty$ is $x\rightarrow+\infty$. In our numerical routine, we invert \eqref{eq:tortoise2} to get $r\equiv r(x)$ (see the appendix A, subsection 6 in \citep{Frolov:2017asg} for more details). In tortoise coordinates, we can decompose the scalar field in spherical harmonics 
 \begin{equation}
-\Phi(x,t)=\frac{1}{r(x)}\sum_{\ell,m=0}\mathcal{U}_{\ell m}(x,t)Y_{\ell m}(\theta,\phi),
+\Phi(x,t)=\frac{1}{r(x)}\sum_{\ell,m=0}\mathcal{U}^{\mathrm{bh}}_{\ell m}(x,t)Y_{\ell m}(\theta,\phi),
 \label{eq:ylm_decomp}
 \end{equation}
 in that way we can rewrite \eqref{eq:scalar_eq_mov} as
 \begin{equation}
-\left[-\partial_t^2+\partial_x^2-V_{\mathrm{scalar}}(x)\right]\mathcal{U}_{\ell m}(x,t) = 0,
+\left[-\partial_t^2+\partial_x^2-V_{\mathrm{scalar}}(x)\right]\mathcal{U}^{\mathrm{bh}}_{\ell m}(x,t) = 0,
 \label{eq:wave_scalar}
 \end{equation}
 and the effective potential $V_{\mathrm{scalar}}(x)$ is given by
@@ -112,22 +112,22 @@ V_{\mathrm{scalar}}(x) = \left(1-\frac{r_g}{r(x)}\right)\left[\frac{\ell(\ell+1)
 \end{equation}
 After rearranging the variables, the equation of motion of the spherical modes is now written in its traditional linear waveform. In Fig.~\ref{fig:Potential_BH}, we observe the growth of the potential barrier with the quantum number $\ell$. The potential wall does not vanish for the monopole ($\ell=0$) due to the extra term proportional to $r^{-3}$ appearing after the coordinate change, which replaces the radial damping in the original Schwarzschild coordinates $(t,r)$. Such a term becomes subdominant for all $\ell\geq 1$. Intuitively, it is reasonable to expect that the modes with frequency above a given threshold can cross the barrier, while reflecting the lower frequency modes. 
 
-Now we setup the scattering problem for one of the spherical modes ($\mathcal{U}_{20}$, the quadrupole) with the following initial conditions corresponding to an ingoing Gaussian wavepacket 
+Now we setup the scattering problem for one of the spherical modes ($\mathcal{U}^{\mathrm{bh}}_{20}$, the quadrupole) with the following initial conditions corresponding to an ingoing Gaussian wavepacket 
 \begin{equation}
-\mathcal{U}_{20}(x,0)=\exp\left(\frac{(x-x_0)^2}{2\sigma^2}\right)~,~\frac{d \mathcal{U}_{20}}{dt}\bigg{|}_{t=0}=\frac{d \mathcal{U}_{20}(x,0)}{dx},
+\mathcal{U}^{\mathrm{bh}}_{20}(x,0)=\exp\left(\frac{(x-x_0)^2}{2\sigma^2}\right)~,~\frac{d \mathcal{U}^{\mathrm{bh}}_{20}}{dt}\bigg{|}_{t=0}=\frac{d \mathcal{U}^{\mathrm{bh}}_{20}(x,0)}{dx},
 \label{eq:scalar_init_cond}
 \end{equation}
 
 \begin{figure}[t!]
 \centering
 \includegraphics[width=.45\textwidth]{figures/bh_l_2.pdf}
-\caption{\label{fig:bh_sol} Dispersion of the ingoing Gaussian wavepacket $\mathcal{U}_{20}$ by the potential barrier (plotted in black) showing the incident, reflected and transmitted pulses, it is possible notice the ringing of the reflected solution due to the quasinormal modes.}
+\caption{\label{fig:bh_sol} Dispersion of the ingoing Gaussian wavepacket $\mathcal{U}^{\mathrm{bh}}_{20}$ by the potential barrier (plotted in black) showing the incident, reflected and transmitted pulses, it is possible notice the ringing of the reflected solution due to the quasinormal modes.}
 \end{figure}
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=.45\textwidth]{figures/Scalar_bh.pdf}
-\caption{\label{fig:asympt_sol} Asymptotic solution for the quadrupole mode $\mathcal{U}_{20}(x,t)$ by direct evaluation of the results in Fig.~\ref{fig:bh_sol}. The reflected signal shows its maximum peak and the posterior ringing due to QNMs.}
+\caption{\label{fig:asympt_sol} Asymptotic solution for the quadrupole mode $\mathcal{U}^{\mathrm{bh}}_{20}(x,t)$ by direct evaluation of the results in Fig.~\ref{fig:bh_sol}. The reflected signal shows its maximum peak and the posterior ringing due to QNMs.}
 \end{figure}
 
 \begin{figure}[t]
@@ -136,18 +136,48 @@ Now we setup the scattering problem for one of the spherical modes ($\mathcal{U}
 \caption{\label{fig:RT_scalar} Reflection and transmission coefficients as a function of frequency $(\omega)$, the identity $R^2+T^2=1$ is fulfilled with an error smaller than 1\%.}
 \end{figure}
 
-After fixing the values of the width to be $\sigma=2.598r_g$, the initial position of the Gaussian at $x_0=60.0r_g$, $r_0=20.0r_g$ and the initial conditions in \eqref{eq:scalar_init_cond}, we show the time-dependent solution of \eqref{eq:wave_scalar} in Fig.~\ref{fig:bh_sol}, where we distinguish the incident, transmitted and reflected parts of the solution. It is important to observe the absence of spurious late time reflections and interferences due to the implementation of perfectly matching layers (PMLs) in the outermost regions of our simulation box (see the details of our setup for PMLs in \citep{Frolov:2017asg}). We observe the main features of the reflected signal in Fig.~\ref{fig:asympt_sol}, where the asymptotic behavior of the signal shows a sharp transient is a consequence of the collision against the potential wall, and the ringing of quasinormal modes occuring right after the reflection in agreement with \citep{Petrich:1985csm}. 
+After fixing the values of the width to be $\sigma=0.9185r_g$, the initial position of the Gaussian at $x_0=60.0r_g$, $r_0=20.0r_g$ and the initial conditions in \eqref{eq:scalar_init_cond}, we show the time-dependent solution of \eqref{eq:wave_scalar} in Fig.~\ref{fig:bh_sol}, where we distinguish the incident, transmitted and reflected parts of the solution. It is important to observe the absence of spurious late time reflections and interferences due to the implementation of perfectly matching layers (PMLs) in the outermost regions of our simulation box (see the details of our setup for PMLs in \citep{Frolov:2017asg}). We observe the main features of the reflected signal in Fig.~\ref{fig:asympt_sol}, where the asymptotic behavior of the signal shows a sharp transient is a consequence of the collision against the potential wall, and the ringing of quasinormal modes occuring right after the reflection in agreement with \citep{Petrich:1985csm}. 
 
-It is now possible to evaluate the reflection and transmission coefficients of the potential wall depicted in Fig.~\ref{fig:Potential_BH}. To do so, we compute the one dimensional Fourier transform of the incident $\tilde{\mathcal{U}}_{20}^{\mathrm{inc}}(\omega)=\mathcal{F}[\mathcal{U}_{20}(0,x)]$, reflected $\tilde{\mathcal{U}}_{20}^{\mathrm{ref}}(\omega)=\mathcal{F}[\mathcal{U}_{20}(t,+\infty)]$ and transmitted $\tilde{\mathcal{U}}_{20}^{\mathrm{trans}}(\omega)=\mathcal{F}[\mathcal{U}_{20}(t,-\infty)]$ from the solved scattering modes in order to define
+It is now possible to evaluate the reflection and transmission coefficients of the potential wall depicted in Fig.~\ref{fig:Potential_BH}. To do so, we compute the one dimensional Fourier transform of the incident $\tilde{\mathcal{U}}_{20}^{\mathrm{inc}}(\omega)=\mathcal{F}[\mathcal{U}^{\mathrm{bh}}_{20}(0,x)]$, reflected $\tilde{\mathcal{U}}_{20}^{\mathrm{ref}}(\omega)=\mathcal{F}[\mathcal{U}^{\mathrm{bh}}_{20}(t,+\infty)]$ and transmitted $\tilde{\mathcal{U}}_{20}^{\mathrm{trans}}(\omega)=\mathcal{F}[\mathcal{U}^{\mathrm{bh}}_{20}(t,-\infty)]$ from the solved scattering modes in order to define
 \begin{equation}
 R(\omega)\equiv \frac{||\tilde{\mathcal{U}}_{20}^{\mathrm{ref}}(\omega)||}{||\tilde{\mathcal{U}}_{20}^{\mathrm{inc}}(\omega)||}~,~T(\omega)\equiv \frac{||\tilde{\mathcal{U}}_{20}^{\mathrm{trans}}(\omega)||}{||\tilde{\mathcal{U}}_{20}^{\mathrm{inc}}(\omega)||}
 \label{eq:ref_and_trans}
 \end{equation}
-as the transmission and reflection coefficients, respectively. In Fig.~\ref{fig:RT_scalar}, we plot the squares of these coefficients as functions of frequency observing that the identity $R^2+T^2=1$ is only approximately met because of the small contributions coming from the QNMs frequency peaks in both the transmitted and reflected solutions. The shape of both the transmissivity and reflectivity curves is very similar to an hyperbolic tangent step function\footnote{This is not surprising after we consider the DeWitt approximation for the transmissivity \citep{Frolov:1998wf}, which is precisely given by a step function.}, intersecting at $R^2=T^2=0.5$, as expected. Furthermore, it is crucial to notice from the last figure that it is only in a narrow band of frequencies where the amplitudes transmitted and reflected by the potential barrier are comparable. Such a fact will be important in our analysis of the effective potential cavity in the case of a wormhole.  
+\begin{figure}[t]
+\centering
+\includegraphics[width=.45\textwidth]{figures/potential_scalar.pdf}
+\caption{\label{fig:potential_wh} Effective potential cavity for the wormhole, we observe the growth of the barriers with the quantum number $\ell$.}
+\end{figure}
+
+as the transmission and reflection coefficients, respectively. In Fig.~\ref{fig:RT_scalar}, we plot the squares of these coefficients as functions of frequency observing that the identity $R^2+T^2=1$ is only approximately met because of the small contributions coming from the QNMs frequency peaks in both the transmitted and reflected solutions. The shape of both the transmissivity and reflectivity curves is very similar to an hyperbolic tangent step function\footnote{This is not surprising after we consider the DeWitt approximation for the transmissivity \citep{Frolov:1998wf}, which is precisely given by a step function.}, intersecting at $R^2=T^2=0.5$, as expected. Furthermore, it is crucial to notice from the last figure that it is only in a narrow band of frequencies where the amplitudes transmitted and reflected by the potential barrier are comparable. in the case of a wormhole, such a fact will be important in our analysis.  
+
 \subsection{Scattering by a traversable wormhole} 
-
-
-
+In this section, we study the dispersion of Gaussian wavepackets by a traversable wormhole, formed by the junction at $r_0>r_g$ of two Schwarzschild black hole solutions with equal mass. There is a discontinuity in $G_{\alpha\beta}$ such that at $r=r_0=20.0r_g$, any contracting congruence of geodesics in one side of the throat starts to expand in order to reach the other side, violating the weak energy condition.
+The dynamics of the scattering problem is still given by the solutions of \eqref{eq:scalar_eq_mov} following the same decomposition in spherical modes as in \eqref{eq:ylm_decomp}. Hence, the waveform of the equation of motion for the spherical modes is given by
+\begin{equation}
+\left[-\partial_t^2+\partial_x^2-V^{\mathrm{wh}}_{\mathrm{scalar}}(x)\right]\mathcal{U}_{\ell m}(x,t) = 0,
+\label{eq:wave_scalar_wh}
+\end{equation}
+and the effective potential $V^{\mathrm{wh}}_{\mathrm{scalar}}(x)$ yields
+\begin{equation}
+V^{\mathrm{wh}}_{\mathrm{scalar}}\left(x\right) = \left(1-\frac{r_g}{r\left(|x|\right)}\right)\left[\frac{\ell(\ell+1)}{r\left(|x|\right)^2}+\frac{r_g}{r\left(|x|\right)^3}\right].
+\end{equation}   
+\begin{figure}[t!]
+\centering
+\includegraphics[width=.3\textwidth]{figures/Geom_optics.pdf}
+\caption{\label{fig:Geom_optics} Schematic reconstruction of the outgoing solution by a sequence of reflections and transmissions inside the potential cavity.}
+\end{figure}
+which is plotted in Fig.~\ref{fig:potential_wh} and coincides with the shape of the potential calculated in \citep{Cardoso:2016oxy}. Strictly speaking, we refer to $r\left(|x|\right)$ as the same inverse of the function mentioned in \eqref{eq:tortoise2} now evaluated at $|x|-r_0$. As we can see in Fig.~\ref{fig:potential_wh}, the new effective potential is merely a reflection of the potential barrier in Fig.~\ref{fig:Potential_BH} about the ordinate axis; thus, it is sensible to identify this system as a potential cavity built from two potential barriers with the reflection and transmission coefficients depicted in Fig.~\ref{fig:RT_scalar}. Furthermore, let us assume that an arbitrary incident pulse $\Phi_0$ propagates towards the cavity, it is, therefore, reasonable to approximate the spectrum of the asymptotic solution by a simple geometrical series of reflections and transmissions inside the cavity acting on the incident pulse, as shown in Fig.~\ref{fig:Geom_optics}. Following this scheme, the asymptotic solution can be approximated by
+\begin{equation}
+\Phi^{\mathrm{wh}}(\omega)|_{x\rightarrow+\infty}=\left[R+T\circ\sum_{i=0}R^{2i+1}\circ T\right]\circ\Phi_0(\omega).
+\label{eq:reconst}
+\end{equation}
+It is not difficult to see that, in the hypothetic case of a perfectly reflective wall replacing the left potential barrier in Figs.~\ref{fig:potential_wh} and \ref{fig:Geom_optics}, the reconstructed pulse is instead given by 
+\begin{equation}
+\Phi^{\mathrm{f}}(\omega)|_{x\rightarrow+\infty}=\left[R+T\circ\sum_{i=0}R^i\circ T\right]\circ\Phi_0(\omega),
+\label{eq:reconst_firewall}
+\end{equation}
+corresponding to the case of a firewall. We will not cover the features of the firewall solution in what remains of this paper.
 \section{Scattering of tensor wavepackets}\label{sec:tensor} 
 \section{Conclusions}\label{sec:conclusions}
 
