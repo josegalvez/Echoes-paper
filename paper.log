@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  15 DEC 2018 00:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  15 DEC 2018 00:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -632,16 +632,11 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: 2D259F65BF553134D7D9255AD5968BDC;639.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
-
-
  ) 
 Here is how much of TeX's memory you used:
  9211 strings out of 493014
  130148 string characters out of 6133351
- 265657 words of memory out of 5000000
+ 265669 words of memory out of 5000000
  12541 multiletter control sequences out of 15000+600000
  16629 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
