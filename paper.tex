@@ -72,7 +72,7 @@ The layout for this paper is as follows: in section \ref{sec:scalar}, we review 
 \section{Scattering of scalar wavepackets}\label{sec:scalar}
 In this section, we solve the scattering of a Gaussian wavepacket by a spherically symmetric wormhole. To do so, we will first review the dispersion by the centrifugal barrier of a spherically symmetric black hole in order to find the properties of the potential cavity.
 \subsection{Scattering by a Schwarzschild black hole}\label{subsec:bh} 
-The dispersion of scalar waves by a Schwarzschild black hole has been thoroughly studied \citep{doi:10.1063/1.522949, Sanchez:1976xm, Sanchez:1977si, Sanchez:1977vz}, it is crucial for our purposes to provide the full solution since it contains all the information of the potential barriers constituting the effective potential in the case of a wormhole. The dynamics of the scattering problem is found by solving the equation of motion for scalar field
+The dispersion of scalar waves by a Schwarzschild black hole has been thoroughly studied \citep{doi:10.1063/1.522949, Sanchez:1976xm, Sanchez:1977si, Sanchez:1977vz}, it is crucial for our purposes to provide the full solution since it contains all the information of the potential barriers constituting the effective potential in the case of a wormhole. The dynamics of the scattering problem is found by solving the equation of motion for a test scalar field
 \begin{equation}
 \Box\Phi=0,\label{eq:scalar_eq_mov} 
 \end{equation}
@@ -110,11 +110,11 @@ and the effective potential $V_{\mathrm{scalar}}(x)$ is given by
 \begin{equation}
 V_{\mathrm{scalar}}(x) = \left(1-\frac{r_g}{r(x)}\right)\left[\frac{\ell(\ell+1)}{r(x)^2}+\frac{r_g}{r(x)^3}\right].
 \end{equation}
-After rearranging the variables, the equation of motion of the spherical modes is now written in its traditional linear waveform. In Fig.~\ref{fig:Potential_BH}, we observe the growth of the potential barrier with the quantum number $\ell$. The potential wall does not vanish for the monopole ($\ell=0$) due to the extra term proportional to $r^{-3}$ appearing after the coordinate change, which replaces the radial damping in the original Schwarzschild coordinates $(t,r)$. Such a term becomes subdominant for all $\ell\geq 1$. Intuitively, it is reasonable to expect that the modes with frequency above a given threshold can cross the barrier, while reflecting the lower frequency modes. 
+After rearranging the variables, the equation of motion of the spherical modes is now written in its traditional linear waveform. In Fig.~\ref{fig:Potential_BH}, we observe the growth of the potential barrier with the angular momentum number $\ell$. The potential wall does not vanish for the monopole ($\ell=0$) due to the extra term proportional to $r^{-3}$ appearing after the coordinate change, which replaces the radial damping in the original Schwarzschild coordinates $(t,r)$. Such a term becomes subdominant for all $\ell\geq 1$. Intuitively, it is reasonable to expect that the modes with frequency above a given threshold can cross the barrier, while reflecting the lower frequency modes. 
 
 Now we setup the scattering problem for one of the spherical modes ($\mathcal{U}^{\mathrm{bh}}_{20}$, the quadrupole) with the following initial conditions corresponding to an ingoing Gaussian wavepacket 
 \begin{equation}
-\mathcal{U}^{\mathrm{bh}}_{20}(x,0)=\exp\left(\frac{(x-x_0)^2}{2\sigma^2}\right)~,~\frac{d \mathcal{U}^{\mathrm{bh}}_{20}}{dt}\bigg{|}_{t=0}=\frac{d \mathcal{U}^{\mathrm{bh}}_{20}(x,0)}{dx},
+\mathcal{U}^{\mathrm{bh}}_{20}(x,0)=\exp\left(\frac{(x-x_0)^2}{2\sigma^2}\right)~,~ \partial_t\mathcal{U}^{\mathrm{bh}}_{20}\bigg{|}_{t=0}=\partial_x \mathcal{U}^{\mathrm{bh}}_{20}(x,0),
 \label{eq:scalar_init_cond}
 \end{equation}
 
@@ -133,7 +133,7 @@ Now we setup the scattering problem for one of the spherical modes ($\mathcal{U}
 \begin{figure}[t]
 \centering
 \includegraphics[width=.45\textwidth]{figures/RT_omega_scalar.pdf}
-\caption{\label{fig:RT_scalar} Reflection and transmission coefficients as a function of frequency $(\omega)$, the identity $R^2+T^2=1$ is fulfilled with an error smaller than 1\%.}
+\caption{\label{fig:RT_scalar} Reflection and transmission coefficients as a function of frequency $(\omega)$, the identity $R^2+T^2=1$ is satisfied with an error smaller than 1\%.}
 \end{figure}
 
 After fixing the values of the width to be $\sigma=0.9185r_g$, the initial position of the Gaussian at $x_0=60.0r_g$, $r_0=20.0r_g$ and the initial conditions in \eqref{eq:scalar_init_cond}, we show the time-dependent solution of \eqref{eq:wave_scalar} in Fig.~\ref{fig:bh_sol}, where we distinguish the incident, transmitted and reflected parts of the solution. It is important to observe the absence of spurious late time reflections and interferences due to the implementation of perfectly matching layers (PMLs) in the outermost regions of our simulation box (see the details of our setup for PMLs in \citep{Frolov:2017asg}). We observe the main features of the reflected signal in Fig.~\ref{fig:asympt_sol}, where the asymptotic behavior of the signal shows a sharp transient is a consequence of the collision against the potential wall, and the ringing of quasinormal modes occurring right after the reflection in agreement with \citep{Petrich:1985csm}. 
@@ -146,10 +146,10 @@ R(\omega)\equiv \frac{||\tilde{\mathcal{U}}_{20}^{\mathrm{ref}}(\omega)||}{||\ti
 \begin{figure}[t]
 \centering
 \includegraphics[width=.4\textwidth]{figures/potential_scalar.pdf}
-\caption{\label{fig:potential_wh} Effective potential cavity for the wormhole, we observe the growth of the barriers with the quantum number $\ell$.}
+\caption{\label{fig:potential_wh} Effective potential cavity for the wormhole, we observe the growth of the barriers with the angular momentum number $\ell$.}
 \end{figure}
 
-as the transmission and reflection coefficients, respectively. In Fig.~\ref{fig:RT_scalar}, we plot the squares of these coefficients as functions of frequency observing that the identity $R^2+T^2=1$ is only approximately met because of the small contributions coming from the QNMs frequency peaks in both the transmitted and reflected solutions. The shape of both the transmissivity and reflectivity curves is very similar to an hyperbolic tangent step function\footnote{This is not surprising after we consider the DeWitt approximation for the transmissivity \citep{Frolov:1998wf}, which is precisely given by a step function.}, intersecting at $R^2=T^2=0.5$, as expected. Furthermore, it is crucial to notice from the last figure that it is only in a narrow band of frequencies where the amplitudes transmitted and reflected by the potential barrier are comparable. in the case of a wormhole, such a fact will be important in our analysis.  
+as the transmission and reflection coefficients, respectively. In Fig.~\ref{fig:RT_scalar}, we plot the squares of these coefficients as functions of frequency observing that the identity $R^2+T^2=1$ is only approximately met because of the small contributions coming from the QNMs frequency peaks in both the transmitted and reflected solutions. The shape of both the transmissivity and reflectivity curves is very similar to an hyperbolic tangent step function\footnote{This is not surprising after we consider the DeWitt approximation for the transmissivity \citep{DeWitt:1975ys,Frolov:1998wf}, which is precisely given by a step function.}, intersecting at $R^2=T^2=0.5$, as expected. Furthermore, it is crucial to notice from the last figure that it is only in a narrow band of frequencies where the amplitudes transmitted and reflected by the potential barrier are comparable. in the case of a wormhole, such a fact will be important in our analysis.  
 
 \subsection{Scattering by a traversable wormhole}\label{subsec:wh} 
 In this section, we study the dispersion of Gaussian wavepackets by a traversable wormhole, formed by the junction at $r_0>r_g$ of two Schwarzschild black hole solutions with equal mass. There is a discontinuity in $G_{\alpha\beta}$ such that at $r=r_0=20.0r_g$, any contracting congruence of geodesics in one side of the throat starts to expand in order to reach the other side, violating the weak energy condition.
@@ -213,13 +213,77 @@ As shown in subsection \ref{subsec:bh}, the curves of reflectivity and transmiss
 
 Now we proceed to reconstruct the asymptotic spectrum by following the geometrical optics relation in \eqref{eq:reconst} considering the reflectivity and transmissivity operators defined in \eqref{eq:ref_and_trans}. Then, the outcome should be compared with the spectral content of the asymptotic wave solutions of \eqref{eq:wave_scalar_wh}. We calculate the Fourier transforms of both the Gaussian incident pulse $\Phi_0(\omega)=\mathcal{F}[\exp\left((x-x_0)^2/2\sigma^2\right)]$ for $\sigma=0.6495r_g$ and $x_0=60.0r_g$, and the asymptotic solution $\tilde{\mathcal{U}}_{20}^{\mathrm{echo}}\equiv\mathcal{F}[\mathcal{U}_{20}(t,+\infty)]$, which includes the echoes.\\
 
+\begin{figure*}
+\centering
+\subfigure{
+\includegraphics[width=.45\textwidth]{figures/Echo_sigma2_l_2.pdf}} \,
+\subfigure{
+\includegraphics[width=.45\textwidth]{figures/Echo_sigma_l_2.pdf}}
+\caption{\label{fig:echo_sigma} Left panel: Amplitudes of the first four echoes as a function of $\sigma$ for $\ell=2$, we observe the presence of a maximum amplitude of all the echoes at roughly $\sigma\approx r_g$, which is not incompatible with the de DeWitt approximation. Right panel: Relative amplitude of the first four echoes compared to the amplitude of the transient. The points represent the simulated wormhole/black hole pairs used in our analysis.} 
+\end{figure*}
 
-After applying the reconstruction expression in \eqref{eq:reconst} up to $i=0$ (in red), and comparing the outcome with $\tilde{\mathcal{U}}_{20}^{\mathrm{echo}}$, we show the reconstructed spectrum and $\tilde{\mathcal{U}}_{20}^{\mathrm{echo}}$ (in blue) in Fig.~\ref{fig:rec_scalar}. The low frequency oscillation peaks in the blue spectrum correspond to the finite size of the simulation box and should be ignored. Notice that the spectrum reconstructed employing the geometrical optics approximation gives the overall shape of the spectrum with decent precision but not the QNM frequency peaks, these appear in the same frequency interval where the reflectivity and transmissivity curves intersect in Fig.~\ref{fig:RT_scalar}. It is, therefore, reasonable to talk about a ``sweet spot'' in the frequency domain where the cavity maximizes the amplitude of the echoes. Intuitively, after observing the results in Fig.~\ref{fig:asympt_two_sigmas}, it is possible to identify a similar ``sweet spot'' in the parameter space space for the widths of the incident Gaussian wavepackets. However, it is also necessary to not only compare the amplitude of each individual echo with $\sigma$, but also the ratio between the amplitude of the echo with the amplitude of the transient for each value of the width.    
+After applying the reconstruction expression in \eqref{eq:reconst} up to $i=0$ (in red), and comparing the outcome with $\tilde{\mathcal{U}}_{20}^{\mathrm{echo}}$, we show the reconstructed spectrum and $\tilde{\mathcal{U}}_{20}^{\mathrm{echo}}$ (in blue) in Fig.~\ref{fig:rec_scalar}. The low frequency oscillation peaks in the blue spectrum correspond to the finite size of the simulation box and should be ignored. Notice that the spectrum reconstructed employing the geometrical optics approximation gives the overall shape of the spectrum with decent precision but not the QNM frequency peaks, these appear in the same frequency interval where the reflectivity and transmissivity curves intersect in Fig.~\ref{fig:RT_scalar}. It is, therefore, reasonable to talk about a ``sweet spot'' in the frequency domain where the cavity maximizes the amplitude of the echoes. Intuitively, after observing the results in Fig.~\ref{fig:asympt_two_sigmas}, it is possible to identify a similar ``sweet spot'' in the parameter space space for the widths of the incident Gaussian wavepackets, considering this is a one parameter problem. However, it is also necessary to not only compare the amplitude of each individual echo with $\sigma$, but also the ratio between the amplitude of the echo with the amplitude of the transient for each value of the width, which is relevant since we are finding the relative intensity of the echoes compared to the strongest outgoing signal. 
 
+To do so, we proceed as follows: we setup a logarithmic 1D grid of widths centered at $\sigma_{\mathrm{DW}}=\sqrt{27}r_g/2\ell$ --  the width of maximum transmissivity according to the DeWitt approximation \citep{DeWitt:1975ys} -- and spaced by increments of $\sqrt{2}\sigma_{\mathrm{DW}}$. Then, we find the amplitudes of the first four echoes for every width of the incident pulse without altering the properties of the cavity. In order to determine the amplitudes of the echoes, we need to subtract the reflection coming from the scattering of a single barrier (i.e., the black hole case) by using the variable $\Delta\mathcal{U}_{20}|_{\mathrm{clean}}\equiv\mathcal{U}_{20}|_{\mathrm{original}}-\mathcal{U}^{\mathrm{bh}}_{20}$. This requires a non-trivial computational effort since each scattering scenario needs to be solved twice (one for the wormhole and one for the black hole) in order to clean up the signal and obtain a clear view of the echoes. Once the signal is refined, we find its Hilbert transform \citep{1449626} in order to find its continuous envelope, which are the green curves in the upper corners of Fig.~\ref{fig:asympt_two_sigmas}, and therefore, the amplitudes of the echoes are the local maxima of their envelopes (the red dots in the same figure). 
 
+We show our results in Fig.~\ref{fig:echo_sigma}, where we notice in the left panel the presence of a well-defined maximal amplitude of the first four echoes. This is consistent with the idea of a range of frequencies/widths that maximize the amplitudes of the echoes, as we shown in the analysis of the reflection and transmission coefficients: the cavity is transparent for small widths of the ingoing Gaussian (large frequencies) and is reflective for wide incident pulses. In the right panel, we observe the growth of the relative amplitude as the widths become smaller. Such a fact only means that the reduction of the transient is faster than the reduction of the echoes as the frequencies grow, as the cavity becomes more transparent the ingoing pulses get transmitted more efficiently. Therefore, this analysis is useful to get a basic understanding of the frequency/width scales in which echoes could be observable.  
 
- 
 \section{Scattering of tensor wavepackets}\label{sec:tensor} 
+Following the even/odd parity decomposition for tensor perturbations of a spherically symmetric spacetime \citep{Regge:1957td, PhysRevD.2.2141, PhysRevD.5.2419}, we implement all the techniques used in section \ref{sec:scalar} to study the scattering of a test Gaussian wavepacket of tensor perturbations. From now on, we will follow the conventions in \citep{Martel:2005ir} and choose the Regge-Wheeler gauge. 
+The dynamics of the wave scattering problem is given by two equations of motion of the form
+\begin{equation}
+\left(\tilde{\Box}-\mathcal{V}_{\mathrm{eff}}\right)\Psi_{\ell m}=0,
+\label{eq:tensor_eq_mov}
+\end{equation} 
+where $\tilde{\Box}\equiv g^{ab}\nabla_a\nabla_b$ is the 2D d'Alembertian operator in the usual $(a,b)\rightarrow(t,r)$ Schwarzschild coordinates. $\mathcal{V}_{\mathrm{eff}}$ corresponds one of two possible potentials, the Regge-wheeler potential, $\mathcal{V}_{\mathrm{odd}}$ 
+\begin{equation}
+\mathcal{V}_{\mathrm{odd}}(r)= \frac{\ell(\ell+1)}{r^2}-\frac{3r_g}{r^3},
+\label{eq:V_odd}
+\end{equation} 
+\begin{figure*}
+\centering
+\subfigure{
+\includegraphics[width=.45\textwidth]{figures/potential_odd.pdf}} \,
+\subfigure{
+\includegraphics[width=.45\textwidth]{figures/delta_even_odd.pdf}} 
+\caption{\label{fig:evenodd_potentials} Left panel: Plot of the Regge-Wheeler potential ($V_{\mathrm{odd}}\equiv[1-r_g/r(|x|)]\mathcal{V}_{\mathrm{odd}}$) as a function of the tortoise coordinate $x$. Right panel: Difference between the Regge-Wheeler and Zerilli potentials $\Delta V=V_{\mathrm{odd}}-V_{\mathrm{even}}$. The difference of the two potentials is below the order of 1\% for ($\ell\geq 2$).} 
+\end{figure*}
+or the Zerilli potential, $\mathcal{V}_{\mathrm{even}}$ 
+\begin{equation}
+\mathcal{V}_{\mathrm{even}}(r)=\displaystyle{\frac{1}{\Lambda^2}\bigg[\mu^2\bigg(\frac{\mu+2}{r^2}+\frac{3r_g}{r^3}\bigg)+\frac{9r_g^2}{r^4}\left(\mu+\frac{r_g}{r}\right)\bigg]},
+\label{eq:V_even}
+\end{equation} 
+where $\mu\equiv(\ell-1)(\ell+2)$ and $\Lambda\equiv\mu+3r_g/r$.  All the terms in proportional to the stress energy tensor and its contractions appearing in the right hand side of \eqref{eq:tensor_eq_mov} in \citep{Martel:2005ir} are not considered for the scattering problem. The introduction of tortoise coordinates $(t,x)$ is also very convenient and works in exactly the same way as in \eqref{eq:tortoise} and \eqref{eq:tortoise2}, in these coordinates the waveform of the two equations of motion -- one for the odd parity modes and another for the even -- is given by 
+\begin{equation}
+\left[-\partial_t^2+\partial_x^2-V_{\mathrm{eff}}(x)\right]\Psi_{\ell m}(x,t) = 0,
+\label{eq:wave_tensor_wh}
+\end{equation}
+where $V_{\mathrm{even}}\equiv[1-r_g/r(|x|)]\mathcal{V}_{\mathrm{even}}$ and $V_{\mathrm{odd}}\equiv[1-r_g/r(|x|)]\mathcal{V}_{\mathrm{odd}}$. Considering the procedure followed in subsection \ref{subsec:wh}, our setup already includes the effective potentials for the wormhole case, obtained by reflection of the potential barriers about the ordinate axis. The effective potentials are plotted in the left panel of Fig.~\ref{fig:evenodd_potentials}, which is very similar to the one in the scalar scattering. In the right panel it is possible to notice that the difference between the potentials is only substantial at $(\ell=1)$. Both the even and odd solutions of \eqref{eq:tensor_eq_mov} and \eqref{eq:wave_tensor_wh} are already spherical modes used to find the two asymptotic polarizations of the tensor fluctuations of a flat background, such as the term in the diagonal, $h_+$ 
+\begin{align}
+\displaystyle{h_+=\frac{1}{r(|x|)}\sum_{\ell,m}\bigg\{\Psi_{\ell m}^{\mathrm{even}}\left[\partial^2_{\theta}+\frac{1}{2}\ell(\ell+1)\right]Y_{\ell m}(\theta,\phi)}\nonumber\\
+\displaystyle{-\Psi_{\ell m}^{\mathrm{odd}}\frac{i m}{\sin\theta}\left[\partial_{\theta}-\frac{\cos\theta}{\sin\theta}\right]Y_{\ell m}(\theta,\phi)\bigg\}},
+\label{eq:hplus}
+\end{align} 
+and the off-diagonal, $h_{\times}$ 
+\begin{align}
+\displaystyle{h_{\times}=\frac{1}{r(|x|)}\sum_{\ell,m}\bigg\{\Psi_{\ell m}^{\mathrm{odd}}\left[\partial^2_{\theta}+\frac{1}{2}\ell(\ell+1)\right]Y_{\ell m}(\theta,\phi)}\nonumber\\
+\displaystyle{+\Psi_{\ell m}^{\mathrm{even}}\frac{i m}{\sin\theta}\left[\partial_{\theta}-\frac{\cos\theta}{\sin\theta}\right]Y_{\ell m}(\theta,\phi)\bigg\}}.
+\label{eq:hx}
+\end{align}
+From these expressions, it is simple to see that the the monopole ($\ell=0$) and the dipole ($\ell=1$) vanish. Thus, the first non trivial contributions come from the quadrupole solutions $\Psi_{20}^{\mathrm{odd}}(x,t)$ and $\Psi_{20}^{\mathrm{even}}(x,t)$, from which the differences in the odd and even potentials are small, and become even smaller for every $\ell>3$, as we can see in right panel of Fig.~\ref{fig:evenodd_potentials}. Hence, we can study any of these two contributions since it is not necessary to duplicate solutions of the mode equations in order to extend our discussions from section \ref{sec:scalar}.\\ 
+
+In analogy with the previous section, now we solve the equations of motion for the scattering process. Our setup for the initial conditions of $\Psi_{20}^{\mathrm{odd}}(x,0)$ and $\Psi_{20}^{\mathrm{even}}(x,0)$ and their time derivatives is not different from \eqref{eq:scalar_init_cond}  
+\begin{align}
+\displaystyle{\Psi^{\mathrm{even}}_{20}(x,0)=\exp\left(\frac{(x-x_0)^2}{2\sigma^2}\right)},\nonumber\\
+\displaystyle{\partial_t \Psi^{\mathrm{even}}_{20}(x,t)\bigg{|}_{t=0}=\partial_x\Psi^{\mathrm{even}}_{20}(x,0)},
+\label{eq:tensor_init_cond}
+\end{align}
+and the same applies for $\Psi^\mathrm{odd}_{20}$ and its initial time derivative. Using the same initial position of the Gaussian wavepackets -- i.e., $x_0=60.0r_g$ -- and the same separation of the cavity -- i.e., $r_0=20.0r_g$ -- as before. We show the evolution of $\Psi_{20}^{\mathrm{even}}(x,t)$ in Fig.~\ref{fig:even_evolve}
+\begin{figure}[t!]
+\centering
+\includegraphics[width=.45\textwidth]{figures/even_wh_l_2.pdf}
+\caption{\label{ffig:even_evolve} Dispersion of the ingoing Gaussian wavepacket $\Psi^\mathrm{even}_{20}(x,t)$ by potential cavity (plotted in black) showing the incident, reflected and transmitted pulses, it is possible to notice the higher order reflections outside the cavity.}
+\end{figure}
 \section{Conclusions}\label{sec:conclusions}
 
 \bibliography{bibliography.bib}
