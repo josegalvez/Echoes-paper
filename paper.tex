@@ -229,13 +229,13 @@ To do so, we proceed as follows: we setup a logarithmic 1D grid of widths center
 We show our results in Fig.~\ref{fig:echo_sigma}, where we notice in the left panel the presence of a well-defined maximal amplitude of the first four echoes. This is consistent with the idea of a range of frequencies/widths that maximize the amplitudes of the echoes, as we shown in the analysis of the reflection and transmission coefficients: the cavity is transparent for small widths of the ingoing Gaussian (large frequencies) and is reflective for wide incident pulses. In the right panel, we observe the growth of the relative amplitude as the widths become smaller. Such a fact only means that the reduction of the transient is faster than the reduction of the echoes as the frequencies grow, as the cavity becomes more transparent the ingoing pulses get transmitted more efficiently. Therefore, this analysis is useful to get a basic understanding of the frequency/width scales in which echoes could be observable.  
 
 \section{Scattering of tensor wavepackets}\label{sec:tensor} 
-Following the even/odd parity decomposition for tensor perturbations of a spherically symmetric spacetime \citep{Regge:1957td, PhysRevD.2.2141, PhysRevD.5.2419}, we implement all the techniques used in section \ref{sec:scalar} to study the scattering of a test Gaussian wavepacket of tensor perturbations. From now on, we will follow the conventions in \citep{Martel:2005ir} and choose the Regge-Wheeler gauge. 
+Following the perspective of the even/odd parity decomposition for tensor perturbations of a spherically symmetric spacetime \citep{Regge:1957td, PhysRevD.2.2141, PhysRevD.5.2419}, we implement all the techniques used in section \ref{sec:scalar} and extend our analysis to study the scattering of a test Gaussian wavepacket of tensor perturbations. From now on, we will follow the conventions in \citep{Martel:2005ir}, including the choice of the Regge-Wheeler gauge. 
 The dynamics of the wave scattering problem is given by two equations of motion of the form
 \begin{equation}
 \left(\tilde{\Box}-\mathcal{V}_{\mathrm{eff}}\right)\Psi_{\ell m}=0,
 \label{eq:tensor_eq_mov}
 \end{equation} 
-where $\tilde{\Box}\equiv g^{ab}\nabla_a\nabla_b$ is the 2D d'Alembertian operator in the usual $(a,b)\rightarrow(t,r)$ Schwarzschild coordinates. $\mathcal{V}_{\mathrm{eff}}$ corresponds one of two possible potentials, the Regge-wheeler potential, $\mathcal{V}_{\mathrm{odd}}$ 
+here $\tilde{\Box}\equiv g^{ab}\nabla_a\nabla_b$ is the 2D d'Alembertian operator in the usual $(a,b)\rightarrow(t,r)$ Schwarzschild coordinates. $\mathcal{V}_{\mathrm{eff}}$ corresponds one of two possible potentials, the Regge-wheeler (odd) potential, $\mathcal{V}_{\mathrm{odd}}$ 
 \begin{equation}
 \mathcal{V}_{\mathrm{odd}}(r)= \frac{\ell(\ell+1)}{r^2}-\frac{3r_g}{r^3},
 \label{eq:V_odd}
@@ -246,19 +246,19 @@ where $\tilde{\Box}\equiv g^{ab}\nabla_a\nabla_b$ is the 2D d'Alembertian operat
 \includegraphics[width=.45\textwidth]{figures/potential_odd.pdf}} \,
 \subfigure{
 \includegraphics[width=.45\textwidth]{figures/delta_even_odd.pdf}} 
-\caption{\label{fig:evenodd_potentials} Left panel: Plot of the Regge-Wheeler potential ($V_{\mathrm{odd}}\equiv[1-r_g/r(|x|)]\mathcal{V}_{\mathrm{odd}}$) as a function of the tortoise coordinate $x$. Right panel: Difference between the Regge-Wheeler and Zerilli potentials $\Delta V=V_{\mathrm{odd}}-V_{\mathrm{even}}$. The difference of the two potentials is below the order of 1\% for ($\ell\geq 2$).} 
+\caption{\label{fig:evenodd_potentials} Left panel: Plot of the Regge-Wheeler potential ($V_{\mathrm{odd}}\equiv[1-r_g/r(|x|)]\mathcal{V}_{\mathrm{odd}}$) as a function of the tortoise coordinate $x$. Right panel: Difference between the Regge-Wheeler and Zerilli effective potentials $\Delta V=V_{\mathrm{odd}}-V_{\mathrm{even}}$. The difference of the two potentials is below the order of 1\% for ($\ell\geq 2$).} 
 \end{figure*}
-or the Zerilli potential, $\mathcal{V}_{\mathrm{even}}$ 
+or the Zerilli (even) potential, $\mathcal{V}_{\mathrm{even}}$ 
 \begin{equation}
 \mathcal{V}_{\mathrm{even}}(r)=\displaystyle{\frac{1}{\Lambda^2}\bigg[\mu^2\bigg(\frac{\mu+2}{r^2}+\frac{3r_g}{r^3}\bigg)+\frac{9r_g^2}{r^4}\left(\mu+\frac{r_g}{r}\right)\bigg]},
 \label{eq:V_even}
 \end{equation} 
-where $\mu\equiv(\ell-1)(\ell+2)$ and $\Lambda\equiv\mu+3r_g/r$.  All the terms in proportional to the stress energy tensor and its contractions appearing in the right hand side of \eqref{eq:tensor_eq_mov} in \citep{Martel:2005ir} are not considered for the scattering problem. The introduction of tortoise coordinates $(t,x)$ is also very convenient and works in exactly the same way as in \eqref{eq:tortoise} and \eqref{eq:tortoise2}, in these coordinates the waveform of the two equations of motion -- one for the odd parity modes and another for the even -- is given by 
+where $\mu\equiv(\ell-1)(\ell+2)$ and $\Lambda\equiv\mu+3r_g/r$. All the source terms in proportional to the stress energy tensor and its contractions appearing in the right hand side of \eqref{eq:tensor_eq_mov} in \citep{Martel:2005ir} are not considered for the scattering problem. The introduction of tortoise coordinates $(t,x)$ is also very convenient and works in exactly the same way as in \eqref{eq:tortoise} and \eqref{eq:tortoise2}, in these coordinates the waveform of the two equations of motion -- one for the odd parity modes and another for the even -- is given by 
 \begin{equation}
 \left[-\partial_t^2+\partial_x^2-V_{\mathrm{eff}}(x)\right]\Psi_{\ell m}(x,t) = 0,
 \label{eq:wave_tensor_wh}
 \end{equation}
-where $V_{\mathrm{even}}\equiv[1-r_g/r(|x|)]\mathcal{V}_{\mathrm{even}}$ and $V_{\mathrm{odd}}\equiv[1-r_g/r(|x|)]\mathcal{V}_{\mathrm{odd}}$. Considering the procedure followed in subsection \ref{subsec:wh}, our setup already includes the effective potentials for the wormhole case, obtained by reflection of the potential barriers about the ordinate axis. The effective potentials are plotted in the left panel of Fig.~\ref{fig:evenodd_potentials}, which is very similar to the one in the scalar scattering. In the right panel it is possible to notice that the difference between the potentials is only substantial at $(\ell=1)$. Both the even and odd solutions of \eqref{eq:tensor_eq_mov} and \eqref{eq:wave_tensor_wh} are already spherical modes used to find the two asymptotic polarizations of the tensor fluctuations of a flat background, such as the term in the diagonal, $h_+$ 
+where $V_{\mathrm{even}}\equiv[1-r_g/r(|x|)]\mathcal{V}_{\mathrm{even}}$ and $V_{\mathrm{odd}}\equiv[1-r_g/r(|x|)]\mathcal{V}_{\mathrm{odd}}$. Considering the procedure followed in subsection \ref{subsec:wh}, our setup already includes the effective potentials for the wormhole case, obtained by reflection of the potential barriers about the ordinate axis. The effective potentials are plotted in the left panel of Fig.~\ref{fig:evenodd_potentials}, which is very similar to the one in the scalar scattering. In the right panel it is possible to notice that the difference between the potentials is only substantial at $(\ell\leq1)$. Both the even and odd solutions of \eqref{eq:tensor_eq_mov} and \eqref{eq:wave_tensor_wh} are already spherical modes used to find the two asymptotic polarizations of the tensor fluctuations propagating in a flat background, such as the term in the diagonal, $h_+$ 
 \begin{align}
 \displaystyle{h_+=\frac{1}{r(|x|)}\sum_{\ell,m}\bigg\{\Psi_{\ell m}^{\mathrm{even}}\left[\partial^2_{\theta}+\frac{1}{2}\ell(\ell+1)\right]Y_{\ell m}(\theta,\phi)}\nonumber\\
 \displaystyle{-\Psi_{\ell m}^{\mathrm{odd}}\frac{i m}{\sin\theta}\left[\partial_{\theta}-\frac{\cos\theta}{\sin\theta}\right]Y_{\ell m}(\theta,\phi)\bigg\}},
@@ -270,22 +270,94 @@ and the off-diagonal, $h_{\times}$
 \displaystyle{+\Psi_{\ell m}^{\mathrm{even}}\frac{i m}{\sin\theta}\left[\partial_{\theta}-\frac{\cos\theta}{\sin\theta}\right]Y_{\ell m}(\theta,\phi)\bigg\}}.
 \label{eq:hx}
 \end{align}
-From these expressions, it is simple to see that the the monopole ($\ell=0$) and the dipole ($\ell=1$) vanish. Thus, the first non trivial contributions come from the quadrupole solutions $\Psi_{20}^{\mathrm{odd}}(x,t)$ and $\Psi_{20}^{\mathrm{even}}(x,t)$, from which the differences in the odd and even potentials are small, and become even smaller for every $\ell>3$, as we can see in right panel of Fig.~\ref{fig:evenodd_potentials}. Hence, we can study any of these two contributions since it is not necessary to duplicate solutions of the mode equations in order to extend our discussions from section \ref{sec:scalar}.\\ 
+From these expressions, it is simple to see that the the monopole ($\ell=0$) and the dipole ($\ell=1$) vanish. Thus, the first nontrivial contributions come from the quadrupole solutions $\Psi_{20}^{\mathrm{odd}}(x,t)$ and $\Psi_{20}^{\mathrm{even}}(x,t)$, from which the differences in the odd and even potentials are small, and become even smaller for every $\ell>3$, as we can see in right panel of Fig.~\ref{fig:evenodd_potentials}. Additionally, it is reasonable to identify $h_+$ with the even mode and  $h_{\times}$ with the odd in the equatorial plane up to a constant. Hence, we can study any of these two contributions since it is not necessary to duplicate solutions of the mode equations in order to extend our discussions from section \ref{sec:scalar}. Nonetheless, we will explore one of the consequences of the differences between two potentials in Appendix \ref{sec:AppendixPolar}.\\ 
 
 In analogy with the previous section, now we solve the equations of motion for the scattering process. Our setup for the initial conditions of $\Psi_{20}^{\mathrm{odd}}(x,0)$ and $\Psi_{20}^{\mathrm{even}}(x,0)$ and their time derivatives is not different from \eqref{eq:scalar_init_cond}  
 \begin{align}
-\displaystyle{\Psi^{\mathrm{even}}_{20}(x,0)=\exp\left(\frac{(x-x_0)^2}{2\sigma^2}\right)},\nonumber\\
-\displaystyle{\partial_t \Psi^{\mathrm{even}}_{20}(x,t)\bigg{|}_{t=0}=\partial_x\Psi^{\mathrm{even}}_{20}(x,0)},
+\displaystyle{\Psi^{\mathrm{odd}}_{20}(x,0)=\exp\left(\frac{(x-x_0)^2}{2\sigma^2}\right)},\nonumber\\
+\displaystyle{\partial_t \Psi^{\mathrm{odd}}_{20}(x,t)\bigg{|}_{t=0}=\partial_x\Psi^{\mathrm{odd}}_{20}(x,0)},
 \label{eq:tensor_init_cond}
 \end{align}
-and the same applies for $\Psi^\mathrm{odd}_{20}$ and its initial time derivative. Using the same initial position of the Gaussian wavepackets -- i.e., $x_0=60.0r_g$ -- and the same separation of the cavity -- i.e., $r_0=20.0r_g$ -- as before. We show the evolution of $\Psi_{20}^{\mathrm{even}}(x,t)$ in Fig.~\ref{fig:even_evolve}
+and the same applies for $\Psi^\mathrm{even}_{20}$ and its initial time derivative. Using $\sigma=0.9185r_g$, the same initial position of the Gaussian wavepackets -- i.e., $x_0=60.0r_g$ -- and the same separation between potential walls -- i.e., $r_0=20.0r_g$ -- as before. We show the evolution of $\Psi_{20}^{\mathrm{even}}(x,t)$ in Fig.~\ref{fig:even_evolve}, where the dispersion of the ingoing pulse is not significantly different from our results in the left panel of Fig.~\ref{fig:sol_n_flux_wh}: this is not surprising due to the similarities between the shapes of the effective potentials for scalar and tensor modes, which seem to become even more similar for higher values of $\ell$. At late times, the cavity is filled showing an interference pattern. Internal reflections make the QNMs propagate for longer in the spheres of maximum effective potential.
+
 \begin{figure}[t!]
 \centering
-\includegraphics[width=.45\textwidth]{figures/even_wh_l_2.pdf}
-\caption{\label{ffig:even_evolve} Dispersion of the ingoing Gaussian wavepacket $\Psi^\mathrm{even}_{20}(x,t)$ by potential cavity (plotted in black) showing the incident, reflected and transmitted pulses, it is possible to notice the higher order reflections outside the cavity.}
+\includegraphics[width=.4\textwidth]{figures/odd_wh_l_2.pdf}
+\caption{\label{fig:even_evolve} Evolution of $\Psi^{\mathrm{odd}}$ for an ingoing Gaussian pulse with $\sigma=0.9185r_g$.}
 \end{figure}
-\section{Conclusions}\label{sec:conclusions}
 
+In Figs.~\ref{fig:odd_sigma_small} and \ref{fig:odd_sigma_large} we see the asymptotic behavior of two solutions with $\sigma=0.9185r_g$ and $\sigma=5.196r_g$, respectively. Observing that the amplitude of the echoes is not large in general, since it varies depending on the spectral content of the initial pulses, which are not the same in the case of initial Gaussian wavelets with different widths.
+\par
+Frequency dependent reflection and transmission coefficients can be calculated by studying a scattering problem with a single potential wall, as we noticed in subsection \ref{subsec:bh}, this is simply achieved by doing an algebraic inversion of the tortoise coordinate definition in \eqref{eq:tortoise2}: here the inverted function is evaluated in $x-r_g$ instead of $|x|-r_g$. The definition of the reflectivity and transmissivity coefficients is the same as in \eqref{eq:ref_and_trans}
+
+\begin{equation}
+R(\omega)\equiv \frac{||\tilde{\Psi}_{\mathrm{ref}}^{\mathrm{odd}}(\omega)||}{||\tilde{\Psi}_{\mathrm{inc}}^{\mathrm{odd}}(\omega)||}~,~T(\omega)\equiv  \frac{||\tilde{\Psi}_{\mathrm{trans}}^{\mathrm{odd}}(\omega)||}{||\tilde{\Psi}_{\mathrm{inc}}^{\mathrm{odd}}(\omega)||},
+\label{eq:odd_ref_and_trans}
+\end{equation}
+where we compute the one dimensional Fourier transforms of the incident $\tilde{\Psi}_{\mathrm{inc}}^{\mathrm{odd}}(\omega)=\mathcal{F}[\Psi^{\mathrm{odd}}_{\mathrm{bh}}(x,0)]$, reflected $\tilde{\Psi}_{\mathrm{ref}}^{\mathrm{odd}}(\omega)=\mathcal{F}[\Psi^{\mathrm{odd}}_{\mathrm{bh}}(+\infty,t)]$ and transmitted $\tilde{\Psi}_{\mathrm{trans}}^{\mathrm{odd}}(\omega)=\mathcal{F}[\Psi^{\mathrm{odd}}_{\mathrm{bh}}(-\infty,t)]$, where the label (bh) stands for the solutions of the scattering problem of \eqref{eq:wave_tensor_wh} with a single potential barrier. These single barrier solutions are not only necessary for the study of the potential cavity, but also to clean up the low frequency (high $\sigma$) solutions, since in those scenarios it is not simple to determine the amplitude of the echoes. Moreover, All of the aforementioned definitions are also applicable for $\Psi^{\mathrm{even}}$. 
+
+\begin{figure}[t!]
+\centering
+\includegraphics[width=.45\textwidth]{figures/Odd_echo_w_09185.pdf}
+\caption{\label{fig:odd_sigma_small} Asymptotic solution of $\Psi^{\mathrm{odd}}_{20}$ considering an incident wavepacket with $\sigma=0.9185r_g$}
+\end{figure}
+
+\begin{figure}[t!]
+\centering
+\includegraphics[width=.45\textwidth]{figures/Odd_echo.pdf}
+\caption{\label{fig:odd_sigma_large} Asymptotic solution of $\Psi^{\mathrm{odd}}_{20}$ considering an incident wavepacket with $\sigma=5.196r_g$. The amplitude of the echoes is four orders of magnitude smaller than in Fig.~\ref{fig:odd_sigma_large}.}
+\end{figure}
+
+In the left panel of Fig.~\ref{fig:RT_reconst}, we show the reflection and transmission coefficients as functions of the frequency, noticing that the two curves intersect at $R^2=T^2=0.5$, as expected. The identity $R^2+T^2$ is approximately satisfied. As a next step of our analysis, we reconstruct the Fourier transform of the asymptotic pulse shown in Fig.~\ref{fig:odd_sigma_small}.  
+\begin{figure*}[t!]
+\centering
+\subfigure{
+\includegraphics[width=.45\textwidth]{figures/RT_omega_odd.pdf}} \,
+\subfigure{
+\includegraphics[width=.45\textwidth]{figures/Reconst_omega_odd.pdf}}
+\caption{\label{fig:RT_reconst} Left panel: Reflection and transmission coefficients for $\sigma=0.9185r_g$ and the quadrupole $\ell,m=(2,0)$, the ``sweet spot'' in the frequency domain is located around the intersection at $R^2=T^2=0.5$. Right panel: Geometrical optics reconstruction is plotted in red, and it is compared with the Fourier transform of the asymptotic solution shown in Fig.~\ref{fig:odd_sigma_small}. Ignoring the low frequency peaks (introduced by the finite size of the simulation box), we notice that the reconstructed spectrum provides a good idea of the overall shape, but it does not reproduce the power in the frequency of the QNMs. Our results are not dramatically different for the solutions of $\Psi^{\mathrm{even}}$.} 
+\end{figure*}
+\par
+We employed the definition of the geometrical optics approximation in \eqref{eq:reconst}, applied up to $i=0$, in the Fourier transform of the Gaussian incident wavepacket in order to obtain the reconstructed profile in the right panel of Fig.~\ref{fig:RT_reconst}. The signal reconstructed using the geometrical optics approximation provides a better representation of the total reflected pulse as the ingoing wavelet gets wider, and therefore, it has more power in lower frequencies. 
+
+Motivated by the drastic change in the amplitudes of the echoes seen in Figs.~\ref{fig:odd_sigma_small} and \ref{fig:odd_sigma_large}. We now explore the dependence of the amplitude of each individual echo with the width of the incident Gaussian pulse. To do so, we follow the same procedure explained by the end of subsection \ref{subsec:wh}: we construct a logarithmic grid in $\sigma$, centered at $\sigma_{\mathrm{DW}}=\sqrt{27}r_g/2\ell$ and spaced in intervals of $\sqrt{2}\sigma_{\mathrm{DW}}$. In addition to this, we define the variable $\Delta\Psi^{\mathrm{odd}}_{\mathrm{clean}}\equiv\Psi^{\mathrm{odd}}_{\mathrm{original}}-\Psi^{\mathrm{odd}}_{\mathrm{bh}}$ in order to clean the solutions from backscattering effects coming from the potential tails, which complicate the task of determining the amplitudes of the echoes with high $\sigma$/low frequency. Once the solutions are clean, the most effective way to find the maxima of each echo is by calculating the local maxima of the Hilbert envelope for the clean signal. In this case, the Hilbert envelopes are the green curves in the upper corner of Figs.~\ref{fig:odd_sigma_small} and \ref{fig:odd_sigma_large} and the maxima are the red dots on top of each curve. 
+This labor is even more computationally expensive than the scalar case, not only because we are solving the scattering problem for two systems: one with a potential barrier and another with the potential cavity; but also we are now working with the two polarizations (i.e., the even and odd solutions). Our results of the amplitude analysis in Fig.~\ref{fig:echo_sigma_odd}, showing the existence of a value of $\sigma$ maximizing the amplitude of the echoes. This is compatible with the notion of a band of widths/frequencies in which the echoes have sufficient amplitude to be measured.    
+
+\begin{figure*}
+\centering
+\subfigure{
+\includegraphics[width=.45\textwidth]{figures/Echo_sigma_odd_l_2.pdf}} \,
+\subfigure{
+\includegraphics[width=.45\textwidth]{figures/Echo_sigma2_odd_l_2.pdf}} 
+\caption{\label{fig:echo_sigma_odd} Left panel: Amplitudes of the first four echoes of $\Psi^{\mathrm{odd}}_{20}$ as a function of $\sigma$ for $\ell=2$. Right panel: Relative amplitude of the first four echoes compared to the amplitude of the transient. The points represent the simulated double/single wall pairs used in our analysis, as in Fig.~\ref{fig:echo_sigma}. These results are not significantly different for $\Psi^{\mathrm{even}}_{20}$.} 
+\end{figure*}
+\section{Conclusions}\label{sec:conclusions}
+In this paper, we studied the scattering of a test scalar and tensor wavepacket on a wormhole. Using a Gaussian wavelet as an incident initial condition, we showed the time dependent scattering solution of the quadrupole scalar and tensor spherical modes both inside and outside the potential cavities in Figs.~\ref{fig:sol_n_flux_wh} and \ref{fig:even_evolve}. Furthermore, after finding the transmission and reflection coefficients of the cavities in Fig.~\ref{fig:RT_scalar} and in the left panel of Fig..~\ref{fig:RT_reconst}, we used the geometrical optics approximation to reconstruct the shape of the Fourier transformed asymptotic solutions in Fig.~\ref{fig:rec_scalar} and in the right panel of Fig.~\ref{fig:RT_reconst}. Finding that the reconstruction is accurate up to the quasinormal mode peaks, which were also identified in the spectrum along with the span of frequencies where these can be found. 
+
+We found that in general, the echoes do not have a large amplitude as we can see directly in the left panel of Fig.~\ref{fig:asympt_two_sigmas} and in Fig.~\ref{fig:odd_sigma_large}. Moreover, there is a band of preferred frequencies and widths that maximizes the amplitude of the echoes. The frequency band is centered around the ``sweet spot'' in which the coefficients of transmissivity and reflectivity overlap, and it is precisely where the QNMs peaks are squeezed in. We extended our analysis to find the range in which the incident width of the incident pulse maximizes the amplitude of the first four echoes, and how large is their amplitude compared to the transient. In Figs.~\ref{fig:echo_sigma_odd} and \ref{fig:echo_sigma}, we found that for low widths of the ingoing signal, as the widths become smaller, the transient decreases faster than the amplitude of the echoes. 
+\begin{figure}[t!]
+\centering
+\includegraphics[width=.45\textwidth]{figures/Polarimetry_echo_w_06495.pdf}
+\caption{\label{fig:pol} Comparing the Hilbert envelopes of the two clean solutions for echoes. We can see a very small excess in amplitude coming from the odd solution, which means that the outgoing signal might have a small net polarization even in the scenario of an incident test Gaussian wavepacket of tensor perturbations with no preferred polarization.}
+\end{figure}
+
+\appendix
+\section{Echoes and gravitational wave polarimetry}
+\label{sec:AppendixPolar}
+
+
+The small difference in the even and odd potentials is shown in the right panel of Fig.~\ref{fig:evenodd_potentials} has an effect. In order to illustrate it, we will just work with the even and odd quadrupole signals in the equatorial plane. In the case of a generic spherical mode with equal contributions from $\Psi^{\mathrm{odd}}_{20}$ and $\Psi^{\mathrm{even}}_{20} $, which are the first nontrivial contributions to \eqref{eq:hplus} and \eqref{eq:hx}, we notice that the two polarizations have the form 
+
+
+\begin{eqnarray}
+h_+(x,t)=\frac{C_1}{r(|x|)}\Psi^{\mathrm{odd}}_{20}(x,t),\nonumber\\
+h_{\times}(x,t)=\frac{C_2}{r(|x|)}\Psi^{\mathrm{even}}_{20}(x,t),\label{eq:pols}
+\end{eqnarray}
+where $C_1$ and $C_2$ are constants coming from the angular dependence. Therefore, the existence of echoes might generate a slightly polarized wave, as we can see from Fig.~\ref{fig:pol}. It is interesting to notice these effects in a spherically symmetric system even when these are tiny. Kerr-like solutions might increase the polarization effects.
+    
+\begin{acknowledgments}
+We would like to thank Alex Zucca, Levon Pogosian and Michael Desrochers for their time and their valuable comments and discussions. This project was partly funded by the Discovery Grants program of the Natural Sciences and Engineering Research Council of Canada. JG is supported by the Billy Jones Graduate Scholarship, granted by the Physics Department at SFU. This research was enabled in part by support provided by WestGrid (\url{www.westgrid.ca}) and Compute Canada Calcul Canada (\url{www.computecanada.ca})
+\end{acknowledgments}
 \bibliography{bibliography.bib}
 
 \end{document}
