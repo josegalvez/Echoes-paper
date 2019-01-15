@@ -48,10 +48,11 @@
 \email{joseg@sfu.ca}
 \author{Andrei V. Frolov}
 \email{frolov@sfu.ca}
-\author{David Dobre}
+\author{David A. Dobre}
 \email{ddobre@sfu.ca}
-\affiliation{Department of Physics, Simon Fraser University, Burnaby, BC, V5A 1S6, Canada}
-
+\affiliation{Department of Physics, Simon Fraser University,\\
+ 8888 University Drive, Burnaby, British Columbia V5A 1S6, Canada}
+\date{\today}
 
 \begin{abstract}
 In the light of the recent progress showing that the hypothetical observation of pulses isolated from the gravitational radiation transient (also known as echoes) would prove the existence of exotic compact objects (ECOs); it is possible to reproduce many features of the ringdown signal by simulating a scattering problem instead of the full coalescence of ECOs. In this paper, we study the dynamics of scalar and tensor wavepackets colliding against a spherically symmetric Morris-Thorne wormhole. Our purpose is to extract the features of the time-dependent scattering solutions inside and outside the effective potential cavity in addition to their asymptotic behavior. Using the geometrical optics approximation, we show that the amplitude of the echoes is only large enough in a narrow bandwidth of frequency space. Additionally, we show that the cavity induces a small net polarization of the asymptotic gravitational wave solutions. The computer code used to produce these results is publicly available for further applications, including scattering and accretion processes.      
@@ -357,7 +358,7 @@ The small difference in the even and odd potentials is shown in the right panel 
 h_+(x,t)=\frac{C_{\theta}}{r(|x|)}\Psi^{\mathrm{even}}_{20}(x,t),\nonumber\\
 h_{\times}(x,t)=\frac{C_{\theta}}{r(|x|)}\Psi^{\mathrm{odd}}_{20}(x,t),\label{eq:pols}
 \end{eqnarray}
-where $C_{\theta}$ is a constant coming from the normalized spherical harmonics evaluated at $\theta=\pi/2$. Considering $\sigma=0.6495 r_g$, the parameters of the cavity used in sections \ref{sec:scalar} and \ref{sec:tensor} and the same initial Gaussian pulses for $\Psi^{\mathrm{even}}_{20}(x,t)$ and $\Psi^{\mathrm{odd}}_{20}(x,t)$; we show that the existence of echoes generates an outgoing wave with even $(h_+)$ polarization in certain intervals and with odd $(h_{\times})$ polarization in what remains of the observation time after the transient, as we notice in Fig.~\ref{fig:pol}. It is interesting to notice these effects are present in the echoes solutions for a spherically symmetric system, even when the excess of power is small. Spin-orbit coupling between the spin and the angular momentum in Kerr-like solutions might enhance the polarization effects.
+where $C_{\theta}$ is a constant coming from the normalized spherical harmonics evaluated at $\theta=\pi/2$. Considering $\sigma=0.6495 r_g$, the parameters of the cavity used in sections \ref{sec:scalar} and \ref{sec:tensor} and the same initial Gaussian pulses for $\Psi^{\mathrm{even}}_{20}(x,t)$ and $\Psi^{\mathrm{odd}}_{20}(x,t)$; we show that the existence of echoes generates an outgoing wave with piecewise net polarization, oscillating from even $(h_+)$ to odd $(h_{\times})$ polarization throughout the observation time after the transient, as we notice in Fig.~\ref{fig:pol}. It is interesting to notice these effects are present in the echoes solutions for a spherically symmetric system, even when the excess of power is small. Spin-orbit coupling between the spin and the angular momentum in Kerr-like solutions might enhance the polarization effects.
     
 \begin{acknowledgments}
 We would like to thank Alex Zucca, Levon Pogosian and Michael Desrochers for their time and their valuable comments and discussions. This project was partly funded by the Discovery Grants program of the Natural Sciences and Engineering Research Council of Canada. JG is supported by the Billy Jones Graduate Scholarship, granted by the Physics Department at SFU. This research was enabled in part by support provided by WestGrid (\url{www.westgrid.ca}) and Compute Canada Calcul Canada (\url{www.computecanada.ca}).
