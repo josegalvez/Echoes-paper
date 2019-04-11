@@ -1,0 +1,91 @@
+\documentclass[preprintnumbers,floats,floatfix,amssymb,prd,onecolumn,superscriptaddress,nofootinbib]{revtex4}
+%\documentclass[preprintnumbers,showpacs,floats,twocolumn,prd,aps]{revtex4}
+\usepackage{amssymb,amsmath}
+\usepackage{epsfig,hyperref}
+\usepackage[svgnames]{xcolor}
+\usepackage{pgf,tikz}
+\usepackage{epstopdf}
+\usepackage[british]{babel}
+
+\makeatletter
+\DeclareRobustCommand*{\bfseries}{%
+  \not@math@alphabet\bfseries\mathbf
+  \fontseries\bfdefault\selectfont
+  \boldmath
+}
+\makeatother
+
+%%
+\special{papersize=8.5in,11in}
+
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\beq{\begin{eqnarray}}
+\def\eeq{\end{eqnarray}}
+
+\makeatletter
+\renewcommand{\vec}[1]{\mbox{\boldmath$#1$}}
+\newcommand{\arXiv}[2][]{\href{http://arxiv.org/abs/#2}{\texttt{arXiv:#2\@ifempty{#1}{}{ [#1]}}}}
+\makeatother
+
+\begin{document}
+\title{Reply to referees for CQG-105854}
+
+\author{Jose T. Galvez Ghersi}%
+\email{joseg@sfu.ca}
+\affiliation{Department of Physics, Simon Fraser University, Burnaby, British Columbia, V5A 1S6, Canada}
+
+\author{Andrei V. Frolov}
+\email{frolov@sfu.ca}
+\affiliation{Department of Physics, Simon Fraser University, Burnaby, British Columbia, V5A 1S6, Canada}
+
+\author{David A. Dobre}
+\email{ddobre@sfu.ca}
+\affiliation{Department of Physics, Simon Fraser University, Burnaby, British Columbia, V5A 1S6, Canada}
+\date{\today}
+
+\begin{abstract} 
+Thanks to the valuable comments of the referees, we had the chance to review our calculations and solve any potential source of confusion. We have updated our draft in order to accommodate all the comments and objections made to the previous version of our manuscript. 
+\end{abstract}
+\maketitle
+
+\section{Referee 1}
+  
+\textbf{Comment:} ... the authors must address the issues with citation of the extensive literature on the subject and place their own efforts in the context of those works. In particular, the authors should note the following papers and comment on how their own results fit with these.\\  
+\begin{itemize}
+\item{https://arxiv.org/abs/1706.06155}\\
+\item{https://arxiv.org/abs/1702.04833}\\
+\item{https://arxiv.org/abs/1711.00391}\\
+\item{https://arxiv.org/abs/1802.02003}\\
+\item{https://arxiv.org/abs/1802.07735}\\
+\item{https://arxiv.org/abs/1806.04253}\\
+\item{https://arxiv.org/abs/1810.07137}\\
+\item{https://arxiv.org/abs/1902.08180}\\
+\end{itemize}
+
+
+\textbf{Reply:}
+Thanks for bringing these papers to our attention. All the references suggested were added in the latest draft of our paper. It is interesting to notice that the Morris-Thorne wormhole eventually evolves into a black hole, as noticed by Wang et al. in arxiv:1802.02003. In addition to this, the idea of a Dyson-series expansion presented by Correia et al. in arXiv:1802.07735 is related to the geometric expansion we suggested in our manuscript.\\ 
+
+\section{Referee 2}
+
+\textbf{Comment:} In Eqs. (12) and (13), the authors seems to assume that the reflection coefficient $R$ of the potential barrier for the wave incident from right to left is equivalent to that for the wave incident from left to right. Generally, both are unequal. The authors should refine Eqs. (12) and (13).\\
+
+\textbf{Reply:} We have derived in Eq. (12) a more general expression for the geometrical series, now considering the different reflection and transmission coefficients for each potential wall. Furthermore, we used these general expressions to derive the reconstruction series for a system with two identical walls in Eq. (14).\\
+ 
+\textbf{Comment:} $R$ and $T$ in Eq. (21) are valid for single barriers, but for a couple of barriers, I am not convinced that (21) is valid..\\  
+  
+\textbf{Reply:} We agree with the referee on this comment, we have now clarified that Eq.(21) only refers to the coefficients of each individual wall, but not the whole system.\\
+
+\textbf{Comment:} It is interesting to consider the case that the MT wormhole is slowly pinching off and eventually collapses into a black hole (so the increasing of echo intervals with the time, see arXiv:1802.02003). The authors should have a mention.   \\
+
+\textbf{Reply:} Thanks, this result is now mentioned (and referenced) in our draft.\\
+
+\textbf{Comment:} In the tortoise coordinate, the distance between the barriers of MT wormhole depends on the radius of throat, see Eq.(4) in e.g.arXiv:1802.02003, (if it equals to the 
+Schwarzschild radius, this distance is infinite). However, in your Figs. 5 and 7, the distance you choose is $<100$. If this number is larger, does your result (the amplitude of the echoes is only large enough in a narrow bandwidth of frequency space) alter?\\
+
+\textbf{Reply:} In Fig. 17, we have included our results after modelling a cavity with a larger throat distance of 100 $r_g$. Showing that, after filtering the signal, the amplitude of the outgoing echoes is five orders of magnitude smaller than the magnitude of the transient. Which agrees with our result.\\
+
+
+
+\end{document}
